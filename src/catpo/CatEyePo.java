@@ -1,4 +1,4 @@
-package po;
+package catpo;
 
 import javax.swing.*;
 import java.util.Date;
@@ -20,7 +20,7 @@ public class CatEyePo {
      * 评价用户数量
      * 电影票房
      * 电影简介
-     * 观众评价（额，买票的不会上差评，对吧）,观众评价用向量存储的（预防线程错误）
+     * 观众评价（额，卖票的不会上差评，对吧）,观众评价用向量存储的（预防线程错误）
      */
     private ImageIcon movie_Pic;
     private String movie_Name;

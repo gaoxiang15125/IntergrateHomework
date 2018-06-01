@@ -1,4 +1,4 @@
-package po;
+package catpo;
 
 import javax.swing.*;
 

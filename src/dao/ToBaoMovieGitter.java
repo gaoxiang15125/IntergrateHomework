@@ -1,20 +1,19 @@
 package dao;
 
-import po.CatEyePo;
+import catpo.CatEyePo;
 
-import java.util.HashMap;
 import java.util.Vector;
 
 /**
  * @program: IntegrateHomework
  *
- * @description: 获取电影售票信息的接口类
+ * @description: 获取淘宝电影售票信息的接口类
  *
  * @author: gaoxiang
  *
  * @create: 2018-06-01 01:03
  **/
-public interface MovieInfoGetter {
+public interface ToBaoMovieGitter {
 
     //根据电影名称获取对应的电影信息
     public CatEyePo getMovieInfoByName(String movieName);
