@@ -2,29 +2,31 @@ package taobaopo.catpo;
 
 /**
  * @program: IntegrateHomework
- * @description: 单个场次信息存储类 存储影院内的场次，价格信息等
+ * @description: 单个场次信息存储类 存储影院内的场次，价格信息等区别在于多个一个原价（其实就是一种销售策略）
  * @author: Mr.Wang
  * @create: 2018-06-01 20:05
  **/
-public class TicketPo {
+public class TaoBaoTicketPo {
 
     private String begin_Time;
     private String end_Time;
     private String movie_Langage;
     private String Video_Hall;
-    private double money;
+    private double now_Money;
+    private double original_Money;
 
-    public TicketPo(String begin_Time, String end_Time, String movie_Langage, String video_Hall, double money) {
+    public TaoBaoTicketPo(String begin_Time, String end_Time, String movie_Langage, String video_Hall, double now_Money, double original_Money) {
         this.begin_Time = begin_Time;
         this.end_Time = end_Time;
         this.movie_Langage = movie_Langage;
         Video_Hall = video_Hall;
-        this.money = money;
+        this.now_Money = now_Money;
+        this.original_Money = original_Money;
     }
 
     /**
      *
-     * @return 本场次电影的开场时间
+     * @return 电影开始时间
      */
     public String getBegin_Time() {
         return begin_Time;
@@ -36,7 +38,7 @@ public class TicketPo {
 
     /**
      *
-     * @return 本场次电影的结束时间
+     * @return 电影结束时间
      */
     public String getEnd_Time() {
         return end_Time;
@@ -48,7 +50,7 @@ public class TicketPo {
 
     /**
      *
-     * @return 本场次电影的语言
+     * @return 电影语言
      */
     public String getMovie_Langage() {
         return movie_Langage;
@@ -60,7 +62,7 @@ public class TicketPo {
 
     /**
      *
-     * @return 本场次电影的赢得放映厅
+     * @return 电影放映厅
      */
     public String getVideo_Hall() {
         return Video_Hall;
@@ -72,13 +74,25 @@ public class TicketPo {
 
     /**
      *
-     * @return 电影票的价格
+     * @return 电影现价
      */
-    public double getMoney() {
-        return money;
+    public double getNow_Money() {
+        return now_Money;
     }
 
-    public void setMoney(double money) {
-        this.money = money;
+    public void setNow_Money(double now_Money) {
+        this.now_Money = now_Money;
+    }
+
+    /**
+     *
+     * @return 电影原价
+     */
+    public double getOriginal_Money() {
+        return original_Money;
+    }
+
+    public void setOriginal_Money(double original_Money) {
+        this.original_Money = original_Money;
     }
 }

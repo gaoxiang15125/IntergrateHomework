@@ -1,7 +1,11 @@
 package dao;
 
 import catpo.CatEyePo;
+import catpo.CatTheatrePo;
+import taobaopo.catpo.TaoBaoPo;
+import taobaopo.catpo.TaoBaoTheatrePo;
 
+import java.util.HashMap;
 import java.util.Vector;
 
 /**
@@ -15,23 +19,11 @@ import java.util.Vector;
  **/
 public interface ToBaoMovieGitter {
 
-    //根据电影名称获取对应的电影信息
-    public CatEyePo getMovieInfoByName(String movieName);
 
-    //获取全部的电影信息，但是经过思考感觉服务器不需要获得map的电影信息，
-    //所以删去
-    //public HashMap<String,CatEyePo> getAllMovieInMap();
+    //获取全部的电影信息 考虑到电影名称重复问题，此处不适用hashmap
+    public Vector<TaoBaoPo> getAllMovie();
 
-    //获取全部的电影信息
-    public Vector<CatEyePo> getAllMovie();
-
-    //根据电影类型获取电影信息
-    public Vector<CatEyePo> getMovieByType(String type);
-
-    //根据电影评分获取电影信息评分范围：1~10分
-    public Vector<CatEyePo> getMovieByScore(double score);
-
-    //根据电影票房获取电光影信息：票房有上亿的也有几千万的你看着半拉
-    public Vector<CatEyePo> getMovieByBookingOffice(double bookingOffice);
+    //获取全部影院，以及影院中的场次信息，因为网页中影院有区分，所一用了hashMap了，方便你检索
+    public HashMap<String, TaoBaoTheatrePo> getAllTheatre();
 
 }

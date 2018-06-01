@@ -6,7 +6,7 @@ package catpo;
  * @author: Mr.Wang
  * @create: 2018-06-01 20:05
  **/
-public class TicketPo {
+public class CatTicketPo {
 
     private String begin_Time;
     private String end_Time;
@@ -14,7 +14,7 @@ public class TicketPo {
     private String Video_Hall;
     private double money;
 
-    public TicketPo(String begin_Time, String end_Time, String movie_Langage, String video_Hall, double money) {
+    public CatTicketPo(String begin_Time, String end_Time, String movie_Langage, String video_Hall, double money) {
         this.begin_Time = begin_Time;
         this.end_Time = end_Time;
         this.movie_Langage = movie_Langage;

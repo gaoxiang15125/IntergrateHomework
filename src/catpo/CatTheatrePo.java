@@ -1,6 +1,6 @@
 package catpo;
 
-import java.util.ArrayList;
+import javax.swing.*;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Vector;
@@ -13,17 +13,37 @@ import java.util.Vector;
  **/
 public class CatTheatrePo {
 
+    private ImageIcon theatre;
     private String theatre_Name;
     private String theatre_Address;
     private String theatre_Phone;
-    private List<String> seaver = new ArrayList<String>();
-    private HashMap<String,Vector<TicketPo>> tickets;
+    private List<String> seaverUsable;
+    private HashMap<String,Vector<CatTicketPo>> tickets;
 
-    public CatTheatrePo(String theatre_Name, String theatre_Address, String theatre_Phone, List<String> seaver, HashMap<String, Vector<TicketPo>> tickets) {
+
+    /**
+     * 未初始化电影场次信息的构造方法
+     * @param theatre
+     * @param theatre_Name
+     * @param theatre_Address
+     * @param theatre_Phone
+     * @param seaverUsable
+     */
+    public CatTheatrePo(ImageIcon theatre, String theatre_Name, String theatre_Address, String theatre_Phone, List<String> seaverUsable) {
+        this.theatre = theatre;
         this.theatre_Name = theatre_Name;
         this.theatre_Address = theatre_Address;
         this.theatre_Phone = theatre_Phone;
-        this.seaver = seaver;
+        this.seaverUsable = seaverUsable;
+    }
+
+    public CatTheatrePo(ImageIcon theatre, String theatre_Name, String theatre_Address, String theatre_Phone, List<String> seaver, HashMap<String, Vector<CatTicketPo>> tickets) {
+        this.theatre = theatre;
+
+        this.theatre_Name = theatre_Name;
+        this.theatre_Address = theatre_Address;
+        this.theatre_Phone = theatre_Phone;
+        this.seaverUsable = seaver;
         this.tickets = tickets;
     }
 
@@ -31,11 +51,11 @@ public class CatTheatrePo {
      *
      * @return 获取本电影院的所有场次信息 key是电影名称，值是该电影在该影院所有场次信息
      */
-    public HashMap<String, Vector<TicketPo>> getTickets() {
+    public HashMap<String, Vector<CatTicketPo>> getTickets() {
         return tickets;
     }
 
-    public void setTickets(HashMap<String, Vector<TicketPo>> tickets) {
+    public void setTickets(HashMap<String, Vector<CatTicketPo>> tickets) {
         this.tickets = tickets;
     }
 
@@ -43,7 +63,7 @@ public class CatTheatrePo {
         this.theatre_Name = theatre_Name;
         this.theatre_Address = theatre_Address;
         this.theatre_Phone = theatre_Phone;
-        this.seaver = seaver;
+        this.seaverUsable = seaver;
     }
 
     /**
@@ -86,11 +106,23 @@ public class CatTheatrePo {
      *
      * @return 影院可以提供的服务（大概是是否提供眼镜，停车、儿童免票等等）
      */
-    public List<String> getSeaver() {
-        return seaver;
+    public List<String> getSeaverUsable() {
+        return seaverUsable;
     }
 
-    public void setSeaver(List<String> seaver) {
-        this.seaver = seaver;
+    public void setSeaverUsable(List<String> seaverUsable) {
+        this.seaverUsable = seaverUsable;
+    }
+
+    /**
+     *
+     * @return 获取影院图片
+     */
+    public ImageIcon getTheatre() {
+        return theatre;
+    }
+
+    public void setTheatre(ImageIcon theatre) {
+        this.theatre = theatre;
     }
 }
