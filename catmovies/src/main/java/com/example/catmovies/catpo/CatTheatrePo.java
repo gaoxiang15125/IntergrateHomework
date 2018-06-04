@@ -18,7 +18,6 @@ public class CatTheatrePo {
     private String seaverUsable;
     private HashMap<String,Vector<CatTicketPo>> tickets;
 
-
     public CatTheatrePo() {
     }
 

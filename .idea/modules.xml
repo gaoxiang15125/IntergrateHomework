@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/catmovies/catmovies.iml" filepath="$PROJECT_DIR$/catmovies/catmovies.iml" />
+      <module fileurl="file://$PROJECT_DIR$/taobaomovies/taobaomovies.iml" filepath="$PROJECT_DIR$/taobaomovies/taobaomovies.iml" />
+    </modules>
+  </component>
+</project>
