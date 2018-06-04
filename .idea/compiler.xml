@@ -6,8 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="IntergrateHomework" />
+        <module name="catmovies" />
+        <module name="taobaomovies" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="IntergrateHomework" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
