@@ -1,7 +1,10 @@
-package com.example.catmovies.daoimpl;
+package daoimpl;
 
-import com.example.catmovies.catpo.CatTicketPo;
-import com.example.catmovies.tools.CatTools;
+import catpo.CatReviewPo;
+import catpo.CatTicketPo;
+import com.example.taobaomovies.taobaopo.TaoBaoTicketPo;
+import com.example.taobaomovies.tools.TaobaoTools;
+import tools.CatTools;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -13,32 +16,32 @@ import java.util.Vector;
 /**
  * @program: IntegrateHomework
  * @description: 获取电影场次信息类
- * @author: Mr.Wang
+ * @author: gaoxiang
  * @create: 2018-06-04 01:36
  **/
-public class CatTicketGetterImpl {
+public class TaobaoTicketGetterImpl {
 
-    public CatTools catTools;
+    public TaobaoTools taobaoTools;
 
-    public CatTicketGetterImpl(){
-        catTools =CatTools.getInstance();
+    public TaobaoTicketGetterImpl(){
+        taobaoTools =TaobaoTools.getInstance();
     }
 
-    public int insert(CatTicketPo catReviewPo, String film, String theatre){
-        //catTools.reGetConnection();
-        Connection conn = catTools.connection;
+    public int insert(TaoBaoTicketPo taoBaoTicketPo, String film, String theatre){
+        //taobaoTools.reGetConnection();
+        Connection conn = taobaoTools.connection;
         int i = 0;
-        String sql = "insert into ticket (film, theatre, beginTime, endTime, languages, videoHall, nowMoney) values (?,?,?,?,?,?,?)";
-        PreparedStatement pstmt;
+        String sql = "insert  into taobao.ticket(film, theatre, beginTime, endTime, languages, videoHall, nowMoney, origialMoney) values (?,?,?,?,?,?,?,?)";
+        PreparedStatement pstmt = null;
         try {
             pstmt = (PreparedStatement) conn.prepareStatement(sql);
             pstmt.setString(1,film);
             pstmt.setString(2,theatre);
-            pstmt.setString(3,catReviewPo.getBegin_Time());
-            pstmt.setString(4,catReviewPo.getEnd_Time());
-            pstmt.setString(5,catReviewPo.getMovie_Langage());
-            pstmt.setString(6,catReviewPo.getVideo_Hall());
-            pstmt.setDouble(7,catReviewPo.getMoney());
+            pstmt.setString(3,taoBaoTicketPo.getBegin_Time());
+            pstmt.setString(4,taoBaoTicketPo.getEnd_Time());
+            pstmt.setString(5,taoBaoTicketPo.getMovie_Langage());
+            pstmt.setString(6,taoBaoTicketPo.getVideo_Hall());
+            pstmt.setDouble(7,taoBaoTicketPo.getMoney());
             i = pstmt.executeUpdate();
             pstmt.close();
         } catch (SQLException e) {
@@ -48,8 +51,8 @@ public class CatTicketGetterImpl {
     }
 
     public HashMap<String,Vector<CatTicketPo>> getTicketByTheatre(String theatre){
-        //catTools.reGetConnection();
-        Connection conn = catTools.connection;
+        //taobaoTools.reGetConnection();
+        Connection conn = taobaoTools.connection;
         String sql = "select * from ticket where theatre = ? order by film";
         PreparedStatement pstmt;
         HashMap<String,Vector<CatTicketPo>> catTicketPos = new HashMap<String, Vector<CatTicketPo>>();
@@ -89,7 +92,7 @@ public class CatTicketGetterImpl {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        //catTools.closeConnection();
+        //taobaoTools.closeConnection();
         return catTicketPos;
     }
 }
