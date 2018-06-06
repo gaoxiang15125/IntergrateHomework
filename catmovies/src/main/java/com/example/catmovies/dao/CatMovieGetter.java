@@ -18,9 +18,9 @@ import java.util.Vector;
 public interface CatMovieGetter {
 
     //获取全部的电影信息 考虑到电影名称重复问题，此处不适用hashmap
-    public Vector<CatEyePo> getAllMovie();
+    Vector<CatEyePo> getAllMovie();
 
     //获取全部影院，以及影院中的场次信息，因为网页中影院有区分，所一用了hashMap了，方便你检索
-    public Vector<CatTheatrePo> getAllTheatre();
+    Vector<CatTheatrePo> getAllTheatre();
 
 }

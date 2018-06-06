@@ -1,7 +1,5 @@
 package com.example.catmovies.catpo;
 
-import javax.swing.*;
-
 public class CatReviewPo {
 
     /**
