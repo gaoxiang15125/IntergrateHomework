@@ -1,5 +1,6 @@
 package com.example.catmovies.daoimpl;
 
+
 import com.example.catmovies.catpo.CatEyePo;
 import com.example.catmovies.tools.CatTools;
 
@@ -19,12 +20,12 @@ public class CatFilmGetterImpl {
     public CatreviewGetterImpl catreviewGetter;
 
     public CatFilmGetterImpl(){
-        catTools =new CatTools();
+        catTools =CatTools.getInstance();
         catreviewGetter = new CatreviewGetterImpl();
     }
 
     public int insert(CatEyePo catEyePo){
-        catTools.reGetConnection();
+        //catTools.reGetConnection();
         Connection conn = catTools.connection;
         int i = 0;
         String sql = "insert into catfilm(name, image, englishName, types, shoot_place, lastingTime, showTime, showPlace, score, userNum, bookingOffice, introduce) value (?,?,?,?,?,?,?,?,?,?,?,?)";
@@ -47,12 +48,13 @@ public class CatFilmGetterImpl {
             pstmt.close();
         } catch (SQLException e) {
             e.printStackTrace();
+            System.out.print("该值已经存在");
         }
         return i;
     }
 
-    public Vector<CatEyePo> getReviewByFilm(){
-        catTools.reGetConnection();
+    public Vector<CatEyePo> getAllFilm(){
+        //catTools.reGetConnection();
         Connection conn = catTools.connection;
         String sql = "select * from catfilm ";
         PreparedStatement pstmt;
@@ -82,7 +84,7 @@ public class CatFilmGetterImpl {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        catTools.closeConnection();
+        //catTools.closeConnection();
         return catReviewPos;
     }
 }

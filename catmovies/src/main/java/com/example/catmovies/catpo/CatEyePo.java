@@ -1,5 +1,6 @@
 package com.example.catmovies.catpo;
 
+import javax.swing.*;
 import java.util.Date;
 import java.util.Vector;
 

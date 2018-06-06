@@ -1,6 +1,8 @@
 package com.example.catmovies.catpo;
 
+import javax.swing.*;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Vector;
 
 /**
@@ -17,6 +19,7 @@ public class CatTheatrePo {
     private String theatre_Phone;
     private String seaverUsable;
     private HashMap<String,Vector<CatTicketPo>> tickets;
+
 
     public CatTheatrePo() {
     }

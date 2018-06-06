@@ -1,9 +1,9 @@
 package com.example.catmovies.dao;
 
+
+
 import com.example.catmovies.catpo.CatEyePo;
 import com.example.catmovies.catpo.CatTheatrePo;
-
-import java.util.HashMap;
 import java.util.Vector;
 
 /**
@@ -16,9 +16,11 @@ import java.util.Vector;
  * @create: 2018-06-01 01:03
  **/
 public interface CatMovieGetter {
+
     //获取全部的电影信息 考虑到电影名称重复问题，此处不适用hashmap
-    Vector<CatEyePo> getAllMovie();
+    public Vector<CatEyePo> getAllMovie();
 
     //获取全部影院，以及影院中的场次信息，因为网页中影院有区分，所一用了hashMap了，方便你检索
-    HashMap<String, CatTheatrePo> getAllTheatre();
+    public Vector<CatTheatrePo> getAllTheatre();
+
 }

@@ -1,5 +1,6 @@
 package com.example.catmovies.daoimpl;
 
+
 import com.example.catmovies.catpo.CatReviewPo;
 import com.example.catmovies.tools.CatTools;
 
@@ -19,11 +20,11 @@ public class CatreviewGetterImpl {
     public CatTools catTools;
 
     public CatreviewGetterImpl(){
-        catTools =new CatTools();
+        catTools =CatTools.getInstance();
     }
 
     public int insert(CatReviewPo catReviewPo, String film){
-        catTools.reGetConnection();
+       // catTools.reGetConnection();
         Connection conn = catTools.connection;
         int i = 0;
         String sql = "insert into review (image, name, time, score, reviews, thumb_up,film) values(?,?,?,?,?,?,?)";
@@ -47,7 +48,7 @@ public class CatreviewGetterImpl {
     }
 
     public Vector<CatReviewPo> getReviewByFilm(String film){
-        catTools.reGetConnection();
+        //catTools.reGetConnection();
         Connection conn = catTools.connection;
         String sql = "select * from review where film = ?";
         PreparedStatement pstmt;
@@ -70,7 +71,7 @@ public class CatreviewGetterImpl {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        catTools.closeConnection();
+        //catTools.closeConnection();
         return catReviewPos;
     }
 

@@ -12,19 +12,20 @@ import java.util.Vector;
  * @author: Mr.Wang
  * @create: 2018-06-04 02:04
  **/
-public class CatTheatreGetterImpl {
+public class
+CatTheatreGetterImpl {
 
     public CatTools catTools;
     //评论获取类实例化对象
     public CatTicketGetterImpl catTicketGetter;
 
     public CatTheatreGetterImpl(){
-        catTools =new CatTools();
+        catTools =CatTools.getInstance();
         catTicketGetter = new CatTicketGetterImpl();
     }
 
     public int insert(CatTheatrePo catTheatrePo){
-        catTools.reGetConnection();
+        //catTools.reGetConnection();
         Connection conn = catTools.connection;
         int i = 0;
         String sql = "insert into theatre(image, name, address, phone, seaverUsable) values (?,?,?,?,?)" ;
@@ -45,7 +46,7 @@ public class CatTheatreGetterImpl {
     }
 
     public Vector<CatTheatrePo> getTheatreAll(){
-        catTools.reGetConnection();
+        //catTools.reGetConnection();
         Connection conn = catTools.connection;
         String sql = "select * from theatre ";
         PreparedStatement pstmt;
@@ -68,7 +69,7 @@ public class CatTheatreGetterImpl {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        catTools.closeConnection();
+        //catTools.closeConnection();
         return catReviewPos;
     }
 }

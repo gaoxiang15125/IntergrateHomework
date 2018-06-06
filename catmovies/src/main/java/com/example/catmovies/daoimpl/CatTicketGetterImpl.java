@@ -21,11 +21,11 @@ public class CatTicketGetterImpl {
     public CatTools catTools;
 
     public CatTicketGetterImpl(){
-        catTools =new CatTools();
+        catTools =CatTools.getInstance();
     }
 
     public int insert(CatTicketPo catReviewPo, String film, String theatre){
-        catTools.reGetConnection();
+        //catTools.reGetConnection();
         Connection conn = catTools.connection;
         int i = 0;
         String sql = "insert into ticket (film, theatre, beginTime, endTime, languages, videoHall, money) values (?,?,?,?,?,?,?)";
@@ -48,7 +48,7 @@ public class CatTicketGetterImpl {
     }
 
     public HashMap<String,Vector<CatTicketPo>> getTicketByTheatre(String theatre){
-        catTools.reGetConnection();
+        //catTools.reGetConnection();
         Connection conn = catTools.connection;
         String sql = "select * from ticket where theatre = ? order by film";
         PreparedStatement pstmt;
@@ -58,15 +58,22 @@ public class CatTicketGetterImpl {
             pstmt.setString(1,theatre);
             ResultSet rs = pstmt.executeQuery();
             //int col = rs.getMetaData().getColumnCount();
-            rs.next();
+            if(rs.next()){
+
+            }else{
+                return null;
+            }
             String bufferFilm = rs.getString("film");
             String film = bufferFilm;
             Vector<CatTicketPo> catReviewPos = new Vector<CatTicketPo>();
             do {
+                film = rs.getString("film");
                 if(bufferFilm.equals(film)){
 
                 }else{
-                    catTicketPos.put(film,catReviewPos);
+                    catTicketPos.put(bufferFilm,catReviewPos);
+                    //System.out.println(bufferFilm+"  "+catReviewPos.size());
+
                     bufferFilm=film;
                     catReviewPos = new Vector<CatTicketPo>();
                 }
@@ -78,10 +85,11 @@ public class CatTicketGetterImpl {
                 catTicketPo.setMoney(rs.getInt("money"));
                 catReviewPos.add(catTicketPo);
             }while (rs.next());
+            catTicketPos.put(bufferFilm,catReviewPos);
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        catTools.closeConnection();
+        //catTools.closeConnection();
         return catTicketPos;
     }
 }

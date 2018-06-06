@@ -11,7 +11,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="catmovies" target="1.8" />
       <module name="IntergrateHomework" target="1.5" />
+      <module name="taobaomovies" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

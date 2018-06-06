@@ -13,16 +13,26 @@ public class CatTools {
     //mysql驱动包名
     private static final String DRIVER_NAME = "com.mysql.cj.jdbc.Driver";
     //数据库连接地址
-    private static final String URL = "jdbc:mysql://localhost:3306/catfilm?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC\n";
+    private static final String URL = "jdbc:mysql://localhost:3306/film?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC\n";
     //用户名
     private static final String USER_NAME = "root";
     //密码
     private static final String PASSWORD = "18805156570";
-    private CatTools catTools;
+    private static CatTools catTools;
 
     public Connection connection = null;
 
-    public CatTools(){
+    public static CatTools getInstance(){
+        if(catTools!=null){
+
+        }
+        else{
+            catTools = new CatTools();
+        }
+        return catTools;
+    }
+
+    private CatTools(){
         init();
     }
     public void init(){
