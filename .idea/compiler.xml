@@ -7,13 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="catmovies" />
+        <module name="integration" />
         <module name="taobaomovies" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="catmovies" target="1.8" />
-      <module name="IntergrateHomework" target="1.5" />
-      <module name="taobaomovies" target="1.8" />
+      <module name="Client" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
