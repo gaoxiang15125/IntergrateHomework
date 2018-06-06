@@ -7,12 +7,12 @@ import java.util.Vector;
 /**
  * @program: IntegrateHomework
  * @description: 猫眼售票系统中的影院信息类，用于存储影院信息。
- * @author: Mr.Wang
+ * @author: gaoxiang
  * @create: 2018-06-01 19:45
  **/
 public class TaoBaoTheatrePo {
 
-    private ImageIcon theare_Image;
+    private String theare_Image;
     private String theatre_Name;
     private String user_score;
     private String theatre_Address;
@@ -27,7 +27,7 @@ public class TaoBaoTheatrePo {
      * @param theatre_Address
      * @param theatre_Phone
      */
-    public TaoBaoTheatrePo(ImageIcon theare_Image, String theatre_Name, String user_score, String theatre_Address, String theatre_Phone) {
+    public TaoBaoTheatrePo(String theare_Image, String theatre_Name, String user_score, String theatre_Address, String theatre_Phone) {
         this.theare_Image = theare_Image;
         this.theatre_Name = theatre_Name;
         this.user_score = user_score;
@@ -47,11 +47,11 @@ public class TaoBaoTheatrePo {
      *
      * @return 影院的图片
      */
-    public ImageIcon getTheare_Image() {
+    public String getTheare_Image() {
         return theare_Image;
     }
 
-    public void setTheare_Image(ImageIcon theare_Image) {
+    public void setTheare_Image(String theare_Image) {
         this.theare_Image = theare_Image;
     }
 

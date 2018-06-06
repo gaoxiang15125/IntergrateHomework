@@ -28,7 +28,7 @@ public class CatFilmGetterImpl {
         //catTools.reGetConnection();
         Connection conn = catTools.connection;
         int i = 0;
-        String sql = "insert into catfilm(name, image, englishName, types, shoot_place, lastingTime, showTime, showPlace, score, userNum, bookingOffice, introduce) value (?,?,?,?,?,?,?,?,?,?,?,?)";
+        String sql = "insert into catfilm(name, image, englishName, types, shoot_place, lastingTime, showTime, showPlace, score, userNum, bookingOffice, introduce) values (?,?,?,?,?,?,?,?,?,?,?,?)";
         PreparedStatement pstmt;
         try {
             pstmt = conn.prepareStatement(sql);

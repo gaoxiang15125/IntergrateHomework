@@ -21,18 +21,21 @@ public class TaoBaoPo {
      * 用户评分
      * 电影简介
      */
-    private ImageIcon movie_Pic;
+    private String movie_Pic;
     private String movie_Name;
     private String movie_English_Name;
     private String director;
     private String staring;
     private String types;
     private String shoot_Place;
-    private String langage;
+    private String language;
     private double lasting_Time;
     private Date show_Time;
     private double user_Score;
     private String introduction;
+
+    public TaoBaoPo() {
+    }
 
     /**
      * 包含全部属性的构造方法
@@ -49,7 +52,10 @@ public class TaoBaoPo {
      * @param user_Score
      * @param introduction
      */
-    public TaoBaoPo(ImageIcon movie_Pic, String movie_Name, String movie_English_Name, String director, String staring, String types, String shoot_Place, String langage, double lasting_Time, Date show_Time, double user_Score, String introduction) {
+
+
+
+    public TaoBaoPo(String movie_Pic, String movie_Name, String movie_English_Name, String director, String staring, String types, String shoot_Place, String langage, double lasting_Time, Date show_Time, double user_Score, String introduction) {
         this.movie_Pic = movie_Pic;
         this.movie_Name = movie_Name;
         this.movie_English_Name = movie_English_Name;
@@ -57,7 +63,7 @@ public class TaoBaoPo {
         this.staring = staring;
         this.types = types;
         this.shoot_Place = shoot_Place;
-        this.langage = langage;
+        this.language = langage;
         this.lasting_Time = lasting_Time;
         this.show_Time = show_Time;
         this.user_Score = user_Score;
@@ -68,11 +74,11 @@ public class TaoBaoPo {
      *
      * @return 获取电影图片
      */
-    public ImageIcon getMovie_Pic() {
+    public String getMovie_Pic() {
         return movie_Pic;
     }
 
-    public void setMovie_Pic(ImageIcon movie_Pic) {
+    public void setMovie_Pic(String movie_Pic) {
         this.movie_Pic = movie_Pic;
     }
 
@@ -153,11 +159,11 @@ public class TaoBaoPo {
      * @return 电影语言
      */
     public String getLangage() {
-        return langage;
+        return language;
     }
 
     public void setLangage(String langage) {
-        this.langage = langage;
+        this.language = langage;
     }
 
     /**

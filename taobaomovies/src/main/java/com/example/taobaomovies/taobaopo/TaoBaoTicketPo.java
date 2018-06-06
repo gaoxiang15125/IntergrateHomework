@@ -3,7 +3,7 @@ package com.example.taobaomovies.taobaopo;
 /**
  * @program: IntegrateHomework
  * @description: 单个场次信息存储类 存储影院内的场次，价格信息等区别在于多个一个原价（其实就是一种销售策略）
- * @author: Mr.Wang
+ * @author: gaoxiang
  * @create: 2018-06-01 20:05
  **/
 public class TaoBaoTicketPo {
