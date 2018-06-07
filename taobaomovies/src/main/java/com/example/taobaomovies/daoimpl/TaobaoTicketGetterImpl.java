@@ -1,10 +1,7 @@
-package daoimpl;
+package com.example.taobaomovies.daoimpl;
 
-import catpo.CatReviewPo;
-import catpo.CatTicketPo;
 import com.example.taobaomovies.taobaopo.TaoBaoTicketPo;
 import com.example.taobaomovies.tools.TaobaoTools;
-import tools.CatTools;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -41,7 +38,8 @@ public class TaobaoTicketGetterImpl {
             pstmt.setString(4,taoBaoTicketPo.getEnd_Time());
             pstmt.setString(5,taoBaoTicketPo.getMovie_Langage());
             pstmt.setString(6,taoBaoTicketPo.getVideo_Hall());
-            pstmt.setDouble(7,taoBaoTicketPo.getMoney());
+            pstmt.setDouble(7,taoBaoTicketPo.getNow_Money());
+            pstmt.setDouble(8,taoBaoTicketPo.getOriginal_Money());
             i = pstmt.executeUpdate();
             pstmt.close();
         } catch (SQLException e) {
@@ -50,12 +48,12 @@ public class TaobaoTicketGetterImpl {
         return i;
     }
 
-    public HashMap<String,Vector<CatTicketPo>> getTicketByTheatre(String theatre){
+    public HashMap<String,Vector<TaoBaoTicketPo>> getTicketByTheatre(String theatre){
         //taobaoTools.reGetConnection();
         Connection conn = taobaoTools.connection;
-        String sql = "select * from ticket where theatre = ? order by film";
-        PreparedStatement pstmt;
-        HashMap<String,Vector<CatTicketPo>> catTicketPos = new HashMap<String, Vector<CatTicketPo>>();
+        PreparedStatement pstmt = null;
+        HashMap<String,Vector<TaoBaoTicketPo>> catTicketPos = new HashMap<String, Vector<TaoBaoTicketPo>>();
+        String sql = "select * from  taobao.ticket where theatre = ?";
         try {
             pstmt = (PreparedStatement)conn.prepareStatement(sql);
             pstmt.setString(1,theatre);
@@ -68,7 +66,7 @@ public class TaobaoTicketGetterImpl {
             }
             String bufferFilm = rs.getString("film");
             String film = bufferFilm;
-            Vector<CatTicketPo> catReviewPos = new Vector<CatTicketPo>();
+            Vector<TaoBaoTicketPo> catReviewPos = new Vector<TaoBaoTicketPo>();
             do {
                 film = rs.getString("film");
                 if(bufferFilm.equals(film)){
@@ -78,19 +76,22 @@ public class TaobaoTicketGetterImpl {
                     //System.out.println(bufferFilm+"  "+catReviewPos.size());
 
                     bufferFilm=film;
-                    catReviewPos = new Vector<CatTicketPo>();
+                    catReviewPos = new Vector<TaoBaoTicketPo>();
                 }
-                CatTicketPo catTicketPo =new CatTicketPo();
+                TaoBaoTicketPo catTicketPo =new TaoBaoTicketPo();
                 catTicketPo.setBegin_Time(rs.getString("beginTime"));
                 catTicketPo.setEnd_Time(rs.getString("endTime"));
                 catTicketPo.setMovie_Langage(rs.getString("languages"));
                 catTicketPo.setVideo_Hall(rs.getString("videoHall"));
-                catTicketPo.setMoney(rs.getInt("money"));
+                catTicketPo.setNow_Money(rs.getDouble("nowMoney"));
+                catTicketPo.setOriginal_Money(rs.getDouble("origialMoney"));
                 catReviewPos.add(catTicketPo);
             }while (rs.next());
             catTicketPos.put(bufferFilm,catReviewPos);
         } catch (SQLException e) {
             e.printStackTrace();
+        }finally {
+            taobaoTools.closeStatement(pstmt);
         }
         //taobaoTools.closeConnection();
         return catTicketPos;

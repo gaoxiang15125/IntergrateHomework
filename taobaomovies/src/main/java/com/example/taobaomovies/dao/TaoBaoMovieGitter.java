@@ -1,10 +1,7 @@
 package com.example.taobaomovies.dao;
 
+import com.example.taobaomovies.taobaopo.TaoBaoPo;
 import com.example.taobaomovies.taobaopo.TaoBaoTheatrePo;
-import taobaopo.TaoBaoPo;
-import taobaopo.TaoBaoTheatrePo;
-
-import java.util.HashMap;
 import java.util.Vector;
 
 /**
@@ -16,7 +13,7 @@ import java.util.Vector;
  *
  * @create: 2018-06-01 01:03
  **/
-public interface ToBaoMovieGitter {
+public interface TaoBaoMovieGitter {
 
 
     //获取全部的电影信息 考虑到电影名称重复问题，此处不适用hashmap

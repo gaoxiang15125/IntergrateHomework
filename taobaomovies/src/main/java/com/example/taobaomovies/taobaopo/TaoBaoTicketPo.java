@@ -8,12 +8,16 @@ package com.example.taobaomovies.taobaopo;
  **/
 public class TaoBaoTicketPo {
 
+
     private String begin_Time;
     private String end_Time;
     private String movie_Langage;
     private String Video_Hall;
     private double now_Money;
     private double original_Money;
+
+    public TaoBaoTicketPo() {
+    }
 
     public TaoBaoTicketPo(String begin_Time, String end_Time, String movie_Langage, String video_Hall, double now_Money, double original_Money) {
         this.begin_Time = begin_Time;

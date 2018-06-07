@@ -14,10 +14,13 @@ public class TaoBaoTheatrePo {
 
     private String theare_Image;
     private String theatre_Name;
-    private String user_score;
+    private double user_score;
     private String theatre_Address;
     private String theatre_Phone;
     private HashMap<String,Vector<TaoBaoTicketPo>> tickets;
+
+    public TaoBaoTheatrePo() {
+    }
 
     /**
      * 未初始化场次信息的构造方法
@@ -27,7 +30,7 @@ public class TaoBaoTheatrePo {
      * @param theatre_Address
      * @param theatre_Phone
      */
-    public TaoBaoTheatrePo(String theare_Image, String theatre_Name, String user_score, String theatre_Address, String theatre_Phone) {
+    public TaoBaoTheatrePo(String theare_Image, String theatre_Name, double user_score, String theatre_Address, String theatre_Phone) {
         this.theare_Image = theare_Image;
         this.theatre_Name = theatre_Name;
         this.user_score = user_score;
@@ -35,7 +38,7 @@ public class TaoBaoTheatrePo {
         this.theatre_Phone = theatre_Phone;
     }
 
-    public TaoBaoTheatrePo(String theatre_Name, String user_score, String theatre_Address, String theatre_Phone, HashMap<String, Vector<TaoBaoTicketPo>> tickets) {
+    public TaoBaoTheatrePo(String theatre_Name, double user_score, String theatre_Address, String theatre_Phone, HashMap<String, Vector<TaoBaoTicketPo>> tickets) {
         this.theatre_Name = theatre_Name;
         this.user_score = user_score;
         this.theatre_Address = theatre_Address;
@@ -71,11 +74,11 @@ public class TaoBaoTheatrePo {
      *
      * @return 影院的用户评分
      */
-    public String getUser_score() {
+    public double getUser_score() {
         return user_score;
     }
 
-    public void setUser_score(String user_score) {
+    public void setUser_score(double user_score) {
         this.user_score = user_score;
     }
 

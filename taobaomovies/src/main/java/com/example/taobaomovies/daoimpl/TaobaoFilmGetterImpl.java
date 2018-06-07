@@ -49,14 +49,7 @@ public class TaobaoFilmGetterImpl {
             e.printStackTrace();
             System.out.print("该电影信息已经爬去，不需要重新爬取");
         }finally {
-            if(pstmt!=null){
-                try {
-                    pstmt.close();
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                    System.out.println("关闭statement 失败");
-                }
-            }
+            taobaoTools.closeStatement(pstmt);
 
         }
         return i;
@@ -96,7 +89,7 @@ public class TaobaoFilmGetterImpl {
             e.printStackTrace();
         }finally {
 
-
+            taobaoTools.closeStatement(pstmt);
         }
         //taobaoTools.closeConnection();
         return taoBaoPos;

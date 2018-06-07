@@ -998,11 +998,13 @@
     <column id="249" parent="233" name="name">
       <Position>2</Position>
       <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="250" parent="233" name="address">
       <Position>3</Position>
       <DataType>varchar(30)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="251" parent="233" name="phone">
@@ -1010,50 +1012,66 @@
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="252" parent="233" name="seaverUsable">
+    <column id="252" parent="233" name="score">
       <Position>5</Position>
-      <DataType>varchar(100)|0s</DataType>
+      <DataType>double|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="253" parent="234" name="film">
+    <key id="253" parent="233" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>name
+address</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="254" parent="234" name="film">
       <Position>1</Position>
       <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="254" parent="234" name="theatre">
+    <column id="255" parent="234" name="theatre">
       <Position>2</Position>
       <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="255" parent="234" name="beginTime">
+    <column id="256" parent="234" name="beginTime">
       <Position>3</Position>
       <DataType>varchar(20)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="256" parent="234" name="endTime">
+    <column id="257" parent="234" name="endTime">
       <Position>4</Position>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="257" parent="234" name="languages">
+    <column id="258" parent="234" name="languages">
       <Position>5</Position>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="258" parent="234" name="videoHall">
+    <column id="259" parent="234" name="videoHall">
       <Position>6</Position>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="259" parent="234" name="nowMoney">
+    <column id="260" parent="234" name="nowMoney">
       <Position>7</Position>
       <DataType>double|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="260" parent="234" name="origialMoney">
+    <column id="261" parent="234" name="origialMoney">
       <Position>8</Position>
       <DataType>double|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
+    <key id="262" parent="234" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>film
+theatre
+beginTime</ColNames>
+      <Primary>1</Primary>
+    </key>
   </database-model>
 </dataSource>

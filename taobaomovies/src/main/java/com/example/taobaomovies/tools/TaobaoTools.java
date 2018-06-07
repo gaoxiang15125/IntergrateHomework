@@ -78,4 +78,8 @@ public class TaobaoTools {
             }
         }
     }
+
+    public static void main(String[]args){
+        new TaobaoTools();
+    }
 }
