@@ -18,9 +18,9 @@ import java.util.Vector;
 public class TaoBaoImpl implements TaoBaoMovieGitter {
 
     //操作具体实现类
-    private TaobaoFilmGetterImpl taobaoFilmGetter;
-    private TaobaoiTheatreGetterImpl taobaoiTheatreGetter;
-    private TaobaoTicketGetterImpl taobaoTicketGetter;
+    public TaobaoFilmGetterImpl taobaoFilmGetter;
+    public TaobaoiTheatreGetterImpl taobaoiTheatreGetter;
+    public TaobaoTicketGetterImpl taobaoTicketGetter;
 
     public TaoBaoImpl(){
         init();
