@@ -1,7 +1,6 @@
 package com.example.catmovies.tools;
 
-import com.example.catmovies.catpo.CatEyePo;
-import com.example.catmovies.test.Course;
+import com.example.catmovies.catpo.CatTicketPo;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
@@ -17,9 +16,9 @@ public class XSDCreate {
 
     public static void main(String[] args) {
         XSDCreate xsdCreate = new XSDCreate();
-        xsdCreate.resolver = xsdCreate.new CustomSchemaOutputResolver("F:", "Course.xsd");
+        xsdCreate.resolver = xsdCreate.new CustomSchemaOutputResolver("F:", "CatTicketPo.xsd");
 
-        Class[] classes = { Course.class };
+        Class[] classes = { CatTicketPo.class };
         xsdCreate.createXSD(classes);
 
         System.out.println("all done");

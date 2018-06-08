@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tns="http://catmovies.com/webservices/service" targetNamespace="http://catmovies.com/webservices/service" elementFormDefault="qualified">
+
+    <xs:complexType name="getAllMoviesRequest">
+        <xs:sequence>
+            <xs:element name="request" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getAllMoviesResponse">
+        <xs:sequence>
+            <xs:element name="pos" type="tns:catEyePo" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="catEyePo">
+        <xs:sequence>
+            <xs:element name="booking_Office" type="xs:double"/>
+            <xs:element name="catReviewPoVector" type="tns:catReviewPo" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="introduction" type="xs:string" minOccurs="0"/>
+            <xs:element name="lasting_Time" type="xs:double"/>
+            <xs:element name="movie_English_Name" type="xs:string" minOccurs="0"/>
+            <xs:element name="movie_Name" type="xs:string" minOccurs="0"/>
+            <xs:element name="movie_Pic" type="xs:string" minOccurs="0"/>
+            <xs:element name="shoot_Place" type="xs:string" minOccurs="0"/>
+            <xs:element name="show_Place" type="xs:string" minOccurs="0"/>
+            <xs:element name="show_Time" type="xs:string" minOccurs="0"/>
+            <xs:element name="types" type="xs:string" minOccurs="0"/>
+            <xs:element name="user_NUM" type="xs:double"/>
+            <xs:element name="user_Score" type="xs:double"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="catReviewPo">
+        <xs:sequence>
+            <xs:element name="review_Time" type="xs:string" minOccurs="0"/>
+            <xs:element name="review_score" type="xs:double"/>
+            <xs:element name="reviews" type="xs:string" minOccurs="0"/>
+            <xs:element name="thumb_UP" type="xs:int"/>
+            <xs:element name="user_Image" type="xs:string" minOccurs="0"/>
+            <xs:element name="user_Name" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getAllTheatresRequest">
+        <xs:sequence>
+            <xs:element name="request" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="getAllTheatresResponse">
+        <xs:sequence>
+            <xs:element name="pos" type="tns:catTheatrePo" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="catTheatrePo">
+        <xs:sequence>
+            <xs:element name="seaverUsable" type="xs:string" minOccurs="0"/>
+            <xs:element name="theatre" type="xs:string" minOccurs="0"/>
+            <xs:element name="theatre_Address" type="xs:string" minOccurs="0"/>
+            <xs:element name="theatre_Name" type="xs:string" minOccurs="0"/>
+            <xs:element name="theatre_Phone" type="xs:string" minOccurs="0"/>
+            <xs:element name="tickets">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="entry" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="key" minOccurs="0" type="xs:string"/>
+                                    <xs:element name="value" minOccurs="0" type="tns:catTicketPo" maxOccurs="unbounded"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="catTicketPo">
+        <xs:sequence>
+            <xs:element name="begin_Time" type="xs:string" minOccurs="0"/>
+            <xs:element name="end_Time" type="xs:string" minOccurs="0"/>
+            <xs:element name="money" type="xs:double"/>
+            <xs:element name="movie_Langage" type="xs:string" minOccurs="0"/>
+            <xs:element name="video_Hall" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

@@ -1,41 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e76c8f0-b643-4ce5-9af6-29a24d4b3821" name="Default" comment="添加了mysql依赖包，以及淘宝接口的实现">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/5acacd4a-c4b6-447b-ad6b-f1cc5569d3a0/storage_v2/_src_/schema/jee.ipoBAA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/5acacd4a-c4b6-447b-ad6b-f1cc5569d3a0/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/5acacd4a-c4b6-447b-ad6b-f1cc5569d3a0/storage_v2/_src_/schema/sakila.oXLGyQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/5acacd4a-c4b6-447b-ad6b-f1cc5569d3a0/storage_v2/_src_/schema/test.kkQ2AA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/5acacd4a-c4b6-447b-ad6b-f1cc5569d3a0/storage_v2/_src_/schema/ticking.JQUlsQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/5acacd4a-c4b6-447b-ad6b-f1cc5569d3a0/storage_v2/_src_/schema/world.khvBBg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/f9ba9098-cf1b-49d6-ac8a-f314393a2470/storage_v2/_src_/schema/jee.ipoBAA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/f9ba9098-cf1b-49d6-ac8a-f314393a2470/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/f9ba9098-cf1b-49d6-ac8a-f314393a2470/storage_v2/_src_/schema/sakila.oXLGyQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/f9ba9098-cf1b-49d6-ac8a-f314393a2470/storage_v2/_src_/schema/test.kkQ2AA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/f9ba9098-cf1b-49d6-ac8a-f314393a2470/storage_v2/_src_/schema/ticking.JQUlsQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/f9ba9098-cf1b-49d6-ac8a-f314393a2470/storage_v2/_src_/schema/world.khvBBg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/taobaomovies/src/main/java/com/example/taobaomovies/daoimpl/TaobaoiTheatreGetterImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/taobaomovies/src/main/java/com/example/taobaomovies/database/TaoBaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/taobaomovies/src/test/java/com/example/taobaomovies/daoimpl/TaobaoFilmGetterImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/taobaomovies/src/test/java/com/example/taobaomovies/database/TaoBaoImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5acacd4a-c4b6-447b-ad6b-f1cc5569d3a0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5acacd4a-c4b6-447b-ad6b-f1cc5569d3a0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f9ba9098-cf1b-49d6-ac8a-f314393a2470.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f9ba9098-cf1b-49d6-ac8a-f314393a2470.xml" afterDir="false" />
+    <list default="true" id="9e76c8f0-b643-4ce5-9af6-29a24d4b3821" name="Default" comment="complete cat movies web services system">
+      <change afterPath="$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/dao/CatMovieGetterMock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/generatedPos/com/catmovies/webservices/service/CatEyePo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/generatedPos/com/catmovies/webservices/service/CatReviewPo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/generatedPos/com/catmovies/webservices/service/CatTheatrePo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/generatedPos/com/catmovies/webservices/service/CatTicketPo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/generatedPos/com/catmovies/webservices/service/GetAllMoviesRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/generatedPos/com/catmovies/webservices/service/GetAllMoviesResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/generatedPos/com/catmovies/webservices/service/GetAllTheatresRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/generatedPos/com/catmovies/webservices/service/GetAllTheatresResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/generatedPos/com/catmovies/webservices/service/ObjectFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/generatedPos/com/catmovies/webservices/service/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/webservices/CatMovieEndpoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/catmovies/src/main/resources/CatMovies.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/integration/src/main/java/com/example/integration/interfaces/CatMovies.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/integration/src/main/java/com/example/integration/interfaces/TaobaoMovies.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/integration/src/main/java/com/example/integration/po/catpo/CatEyePo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/integration/src/main/java/com/example/integration/po/catpo/CatReviewPo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/integration/src/main/java/com/example/integration/po/catpo/CatTheatrePo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/integration/src/main/java/com/example/integration/po/catpo/CatTicketPo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/integration/src/main/java/com/example/integration/po/taobaopo/TaoBaoPo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/integration/src/main/java/com/example/integration/po/taobaopo/TaoBaoTheatrePo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/integration/src/main/java/com/example/integration/po/taobaopo/TaoBaoTicketPo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/config/WebServiceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/config/WebServiceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/dao/CatMovieGetter.java" beforeDir="false" afterPath="$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/dao/CatMovieGetter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/tools/XSDCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/tools/XSDCreate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catmovies/src/main/resources/Course.xsd" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/integration/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/integration/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/taobaomovies/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/taobaomovies/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/taobaomovies/src/main/java/com/example/taobaomovies/dao/ToBaoMovieGitter.java" beforeDir="false" afterPath="$PROJECT_DIR$/taobaomovies/src/main/java/com/example/taobaomovies/dao/TaoBaoMovieGitter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/taobaomovies/src/main/java/com/example/taobaomovies/daoimpl/CatTheatreGetterImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/taobaomovies/src/main/java/com/example/taobaomovies/daoimpl/TaobaoFilmGetterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/taobaomovies/src/main/java/com/example/taobaomovies/daoimpl/TaobaoFilmGetterImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/taobaomovies/src/main/java/com/example/taobaomovies/daoimpl/TaobaoTicketGetterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/taobaomovies/src/main/java/com/example/taobaomovies/daoimpl/TaobaoTicketGetterImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/taobaomovies/src/main/java/com/example/taobaomovies/taobaopo/TaoBaoTheatrePo.java" beforeDir="false" afterPath="$PROJECT_DIR$/taobaomovies/src/main/java/com/example/taobaomovies/taobaopo/TaoBaoTheatrePo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/taobaomovies/src/main/java/com/example/taobaomovies/taobaopo/TaoBaoTicketPo.java" beforeDir="false" afterPath="$PROJECT_DIR$/taobaomovies/src/main/java/com/example/taobaomovies/taobaopo/TaoBaoTicketPo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/taobaomovies/src/main/java/com/example/taobaomovies/tools/TaobaoTools.java" beforeDir="false" afterPath="$PROJECT_DIR$/taobaomovies/src/main/java/com/example/taobaomovies/tools/TaobaoTools.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/taobaomovies/target/" />
     <ignored path="$PROJECT_DIR$/catmovies/target/" />
     <ignored path="$PROJECT_DIR$/integration/target/" />
+    <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,38 +60,6 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="taobao@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="taobao@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="taobao@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="taobao: schema" type="c314c289:MysqlImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="taobao@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="taobao: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="taobaofilm: table" type="98d5ac3d:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="taobao@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="taobao: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="theatre: table" type="98d5ac3d:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="taobao@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="taobao: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="ticket: table" type="98d5ac3d:MysqlImplModel$Table" />
-      </path>
     </expand>
     <select />
   </component>
@@ -103,36 +72,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="TaoBaoImplTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/taobaomovies/src/test/java/com/example/taobaomovies/database/TaoBaoImplTest.java">
+      <file leaf-file-name="CatTheatrePo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/generatedPos/com/catmovies/webservices/service/CatTheatrePo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TaoBaoImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/taobaomovies/src/main/java/com/example/taobaomovies/database/TaoBaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="40" column="45" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
+            <state relative-caret-position="279">
+              <caret line="79" column="33" lean-forward="true" selection-start-line="79" selection-start-column="33" selection-end-line="79" selection-end-column="33" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#804#805#0" expanded="true" />
-                <element signature="e#826#827#0" expanded="true" />
-                <element signature="e#1212#1213#0" expanded="true" />
-                <element signature="e#1271#1272#0" expanded="true" />
+                <element signature="e#8247#8248#0" expanded="true" />
+                <element signature="e#8289#8290#0" expanded="true" />
+                <element signature="e#10911#10912#0" expanded="true" />
+                <element signature="e#10961#10962#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TaobaoiTheatreGetterImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/taobaomovies/src/main/java/com/example/taobaomovies/daoimpl/TaobaoiTheatreGetterImpl.java">
+      <file leaf-file-name="CatMovieEndpoint.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/webservices/CatMovieEndpoint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="69" column="32" lean-forward="true" selection-start-line="69" selection-start-column="32" selection-end-line="69" selection-end-column="32" />
+            <state relative-caret-position="-338">
+              <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -140,32 +99,75 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/integration/pom.xml">
+      <file leaf-file-name="PayloadRoots.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/ws/spring-ws-core/3.0.1.RELEASE/spring-ws-core-3.0.1.RELEASE.jar!/org/springframework/ws/server/endpoint/annotation/PayloadRoots.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="67" column="28" selection-start-line="67" selection-start-column="28" selection-end-line="67" selection-end-column="28" />
+            <state relative-caret-position="216">
+              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/taobaomovies/pom.xml">
+      <file leaf-file-name="GetAllMoviesRequest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/generatedPos/com/catmovies/webservices/service/GetAllMoviesRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="73" column="28" selection-start-line="73" selection-start-column="28" selection-end-line="73" selection-end-column="28" />
+            <state relative-caret-position="264">
+              <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TaobaoTicketGetterImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/taobaomovies/src/main/java/com/example/taobaomovies/daoimpl/TaobaoTicketGetterImpl.java">
+      <file leaf-file-name="WebServiceConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/config/WebServiceConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="50" column="50" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
+            <state relative-caret-position="359">
+              <caret line="32" column="56" lean-forward="true" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GetAllTheatresResponse.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/generatedPos/com/catmovies/webservices/service/GetAllTheatresResponse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="279">
+              <caret line="44" column="7" lean-forward="true" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#2108#2109#0" expanded="true" />
+                <element signature="e#2138#2139#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GetAllTheatresRequest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/generatedPos/com/catmovies/webservices/service/GetAllTheatresRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="36" column="45" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="45" />
+              <folding>
+                <element signature="e#1291#1292#0" expanded="true" />
+                <element signature="e#1321#1322#0" expanded="true" />
+                <element signature="e#1499#1500#0" expanded="true" />
+                <element signature="e#1535#1536#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CatMovies.xsd" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/catmovies/src/main/resources/CatMovies.xsd">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CatTicketPo.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/integration/src/main/java/com/example/integration/po/catpo/CatTicketPo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -175,16 +177,16 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
-        <option value="gaoxiang15125 &lt;630268696@qq.com&gt;" />
         <option value="151250010 &lt;851642452@qq.com&gt;" />
+        <option value="gaoxiang15125 &lt;630268696@qq.com&gt;" />
       </list>
     </option>
     <option name="UPDATE_TYPE" value="MERGE" />
@@ -228,6 +230,19 @@
         <option value="$PROJECT_DIR$/taobaomovies/src/test/java/com/example/taobaomovies/database/TaoBaoImplTest.java" />
         <option value="$PROJECT_DIR$/taobaomovies/src/main/java/com/example/taobaomovies/daoimpl/TaobaoTicketGetterImpl.java" />
         <option value="$PROJECT_DIR$/taobaomovies/pom.xml" />
+        <option value="$PROJECT_DIR$/catmovies/src/main/resources/GetAllMoviesResponse.xsd" />
+        <option value="$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/generatedPos/com/catmovies/webservices/service/CatEyePo.java" />
+        <option value="$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/generatedPos/com/catmovies/webservices/service/CatReviewPo.java" />
+        <option value="$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/generatedPos/com/catmovies/webservices/service/GetAllMoviesRequest.java" />
+        <option value="$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/generatedPos/com/catmovies/webservices/service/GetAllMoviesResponse.java" />
+        <option value="$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/dao/CatMovieGetterMock.java" />
+        <option value="$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/generatedPos/com/catmovies/webservices/service/CatTheatrePo.java" />
+        <option value="$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/generatedPos/com/catmovies/webservices/service/CatTicketPo.java" />
+        <option value="$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/config/WebServiceConfig.java" />
+        <option value="$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/generatedPos/com/catmovies/webservices/service/GetAllTheatresRequest.java" />
+        <option value="$PROJECT_DIR$/catmovies/src/main/resources/CatMovies.xsd" />
+        <option value="$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/generatedPos/com/catmovies/webservices/service/GetAllTheatresResponse.java" />
+        <option value="$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/webservices/CatMovieEndpoint.java" />
       </list>
     </option>
   </component>
@@ -261,158 +276,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="IntergrateHomework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="catmovies" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IntergrateHomework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="catmovies" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IntergrateHomework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="catmovies" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IntergrateHomework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="catmovies" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IntergrateHomework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="catmovies" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="catmovies" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IntergrateHomework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="catmovies" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="catmovies" type="462c0819:PsiDirectoryNode" />
-              <item name="dataBase" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IntergrateHomework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobaomovies" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IntergrateHomework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobaomovies" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IntergrateHomework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobaomovies" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IntergrateHomework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobaomovies" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IntergrateHomework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobaomovies" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="taobaomovies" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IntergrateHomework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobaomovies" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="taobaomovies" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IntergrateHomework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobaomovies" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="taobaomovies" type="462c0819:PsiDirectoryNode" />
-              <item name="daoimpl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IntergrateHomework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobaomovies" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="taobaomovies" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IntergrateHomework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobaomovies" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="taobaomovies" type="462c0819:PsiDirectoryNode" />
-              <item name="tools" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IntergrateHomework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobaomovies" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IntergrateHomework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobaomovies" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IntergrateHomework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobaomovies" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="taobaomovies" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IntergrateHomework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobaomovies" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="taobaomovies" type="462c0819:PsiDirectoryNode" />
-              <item name="daoimpl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IntergrateHomework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="taobaomovies" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="taobaomovies" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="AndroidView" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -460,6 +323,96 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="IntergrateHomework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="catmovies" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IntergrateHomework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="catmovies" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IntergrateHomework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="catmovies" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IntergrateHomework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="catmovies" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IntergrateHomework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="catmovies" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="catmovies" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IntergrateHomework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="catmovies" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="catmovies" type="462c0819:PsiDirectoryNode" />
+              <item name="catpo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IntergrateHomework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="catmovies" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="catmovies" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IntergrateHomework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="catmovies" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="catmovies" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IntergrateHomework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="catmovies" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="catmovies" type="462c0819:PsiDirectoryNode" />
+              <item name="dataBase" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IntergrateHomework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="catmovies" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="catmovies" type="462c0819:PsiDirectoryNode" />
+              <item name="webservices" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IntergrateHomework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="catmovies" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -495,6 +448,58 @@
       <recent name="D:\Git仓库\homework\IntergrateHomework\catmovies\src\main\java\com\example\catmovies" />
     </key>
   </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/ws" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="xml" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;                   xmlns:gs=&quot;http://www.catmovies.com/webservice&quot;&gt;    &lt;soapenv:Header/&gt;    &lt;soapenv:Body&gt;       &lt;gs:getAllMoviesRequest&gt;       &lt;/gs:getAllMoviesRequest&gt;    &lt;/soapenv:Body&gt; &lt;/soapenv:Envelope&gt;" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8080" />
+          <option name="urlPath" value="/ws" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;                   xmlns:gs=&quot;http://www.catmovies.com/webservice&quot;&gt;    &lt;soapenv:Header/&gt;    &lt;soapenv:Body&gt;       &lt;gs:getAllMoviesRequest&gt;       &lt;/gs:getAllMoviesRequest&gt;    &lt;/soapenv:Body&gt; &lt;/soapenv:Envelope&gt;" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -512,7 +517,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TaoBaoImplTest">
+  <component name="RunManager" selected="Spring Boot.CatmoviesApplication">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
@@ -642,6 +647,7 @@
       <workItem from="1528283128234" duration="2114000" />
       <workItem from="1528285465016" duration="8591000" />
       <workItem from="1528332061786" duration="2881000" />
+      <workItem from="1528436791790" duration="3369000" />
     </task>
     <task id="LOCAL-00001" summary="update files structure and test committing">
       <created>1528077612560</created>
@@ -703,17 +709,18 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18143000" />
+    <option name="totallyTimeSpent" value="26577000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="JRebel Console" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="bottom" id="JRebel Executor" order="7" />
       <window_info id="Designer" order="2" />
       <window_info anchor="right" id="Database" order="3" weight="0.290469" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -721,32 +728,32 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Messages" order="7" visible="true" weight="0.32850242" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.3278237" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Run Dashboard" order="7" weight="0.3292011" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.49436393" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3279743" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.49436393" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19515885" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19466145" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info id="JRebel" order="2" side_tool="true" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Persistence" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="JRebel Executor" order="7" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="REST Client" order="8" weight="0.56887054" />
+      <window_info id="Capture Tool" order="2" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info anchor="bottom" id="Database Console" order="8" weight="0.32850242" />
+      <window_info id="Image Layers" order="2" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info id="JRebel" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3279743" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="JRebel Console" order="7" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -761,321 +768,10 @@
     <MESSAGE value="添加猫眼电影数据库操作的实现" />
     <MESSAGE value="完善了淘宝系统的po设定，以及部分逻辑的实现" />
     <MESSAGE value="添加了mysql依赖包，以及淘宝接口的实现" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加了mysql依赖包，以及淘宝接口的实现" />
+    <MESSAGE value="complete cat movies web services system" />
+    <option name="LAST_COMMIT_MESSAGE" value="complete cat movies web services system" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/Run.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/数据层uml设计图.mdj">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6024">
-          <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/电影信息最终设计类图.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/CatmoviesApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-          <folding>
-            <element signature="e#256#257#0" expanded="true" />
-            <element signature="e#327#328#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
-    <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/config/WebServiceConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/tools/CatTools.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="24" selection-end-line="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catmovies/src/test/java/com/example/catmovies/test/RunnerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/test/Runner.java" />
-    <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/test/GetCourseResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taobaomovies/src/main/java/com/example/taobaomovies/dao/Run.java" />
-    <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/dao/CatMovieGetter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/catpo/CatTicketPo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taobaomovies/src/main/java/com/example/taobaomovies/tools/CatTools.java" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f9ba9098-cf1b-49d6-ac8a-f314393a2470/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/5acacd4a-c4b6-447b-ad6b-f1cc5569d3a0/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taobaomovies/src/main/java/com/example/taobaomovies/daoimpl/CatreviewGetterImpl.java" />
-    <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/daoimpl/CatreviewGetterImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/daoimpl/CatFilmGetterImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/daoimpl/CatTicketGetterImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="87" column="35" selection-start-line="87" selection-start-column="35" selection-end-line="87" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/catpo/CatEyePo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/catpo/CatReviewPo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/catpo/CatTheatrePo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="20" column="45" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/daoimpl/CatTheatreGetterImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="61" column="39" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taobaomovies/src/main/java/com/example/taobaomovies/test/TaobaoTest.java" />
-    <entry file="file://$PROJECT_DIR$/taobaomovies/src/main/java/com/example/taobaomovies/taobaopo/TaoBaoPo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taobaomovies/src/main/java/com/example/taobaomovies/taobaopo/TaoBaoTicketPo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/dataBase/CatGetter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taobaomovies/src/main/java/com/example/taobaomovies/dao/TaoBaoMovieGitter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="34" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taobaomovies/src/main/java/com/example/taobaomovies/daoimpl/TaobaoFilmGetterImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1694">
-          <caret line="81" column="22" selection-start-line="81" selection-start-column="22" selection-end-line="81" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taobaomovies/src/main/java/com/example/taobaomovies/TaobaomoviesApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-          <folding>
-            <element signature="e#262#263#0" expanded="true" />
-            <element signature="e#336#337#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taobaomovies/src/test/java/com/example/taobaomovies/TaobaomoviesApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catmovies/mvnw.cmd">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catmovies/mvnw">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catmovies/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="68" column="31" selection-start-line="68" selection-start-column="12" selection-end-line="68" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taobaomovies/src/main/java/com/example/taobaomovies/tools/TaobaoTools.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1015#1016#0" expanded="true" />
-            <element signature="e#1037#1038#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taobaomovies/src/test/java/com/example/taobaomovies/daoimpl/TaobaoFilmGetterImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taobaomovies/src/main/java/com/example/taobaomovies/taobaopo/TaoBaoTheatrePo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="112" column="51" selection-start-line="112" selection-start-column="51" selection-end-line="112" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2692#2693#0" expanded="true" />
-            <element signature="e#2722#2723#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taobaomovies/src/main/java/com/example/taobaomovies/database/TaoBaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="40" column="45" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#804#805#0" expanded="true" />
-            <element signature="e#826#827#0" expanded="true" />
-            <element signature="e#1212#1213#0" expanded="true" />
-            <element signature="e#1271#1272#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taobaomovies/src/test/java/com/example/taobaomovies/database/TaoBaoImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://5acacd4a-c4b6-447b-ad6b-f1cc5569d3a0/schema/taobao/table/ticket">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://f9ba9098-cf1b-49d6-ac8a-f314393a2470/schema/film/table/ticket">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://f9ba9098-cf1b-49d6-ac8a-f314393a2470/schema/film/table/theatre">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://f9ba9098-cf1b-49d6-ac8a-f314393a2470/schema/film/table/review">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://5acacd4a-c4b6-447b-ad6b-f1cc5569d3a0/schema/taobao/table/theatre">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://5acacd4a-c4b6-447b-ad6b-f1cc5569d3a0/schema/taobao/table/taobaofilm">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taobaomovies/src/main/java/com/example/taobaomovies/daoimpl/TaobaoTicketGetterImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="50" column="50" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/taobaomovies/src/main/java/com/example/taobaomovies/daoimpl/TaobaoiTheatreGetterImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="69" column="32" lean-forward="true" selection-start-line="69" selection-start-column="32" selection-end-line="69" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/integration/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
@@ -1087,6 +783,361 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
           <caret line="73" column="28" selection-start-line="73" selection-start-column="28" selection-end-line="73" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/generatedPos/com/example/webservices/service/GetCourseRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="768">
+          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/generatedPos/com/catmovies/webservices/service/ObjectFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-112">
+          <caret line="35" column="28" lean-forward="true" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/dao/CourseRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-26">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/webservices/GetAllMoviesRequest.java" />
+    <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/webservices/GetAllMoviesResponse.java" />
+    <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/webservices/GetAllTheatresRequest.java" />
+    <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/webservices/GetAllTheatresResponse.java" />
+    <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/tools/CatTools.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/daoimpl/CatFilmGetterImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="57" column="39" lean-forward="true" selection-start-line="57" selection-start-column="39" selection-end-line="57" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/dataBase/CatGetter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/ws/spring-ws-core/3.0.1.RELEASE/spring-ws-core-3.0.1.RELEASE.jar!/org/springframework/ws/server/endpoint/annotation/PayloadRoot.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/util/Date.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="1372" column="19" selection-start-line="1372" selection-start-column="19" selection-end-line="1372" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/com/sun/org/apache/xerces/internal/jaxp/datatype/XMLGregorianCalendarImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="542" column="12" selection-start-line="542" selection-start-column="12" selection-end-line="542" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/time/LocalDateTime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="777" column="17" selection-start-line="777" selection-start-column="17" selection-end-line="777" selection-end-column="17" />
+          <folding>
+            <element signature="e#34197#34198#0" expanded="true" />
+            <element signature="e#34235#34236#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/javax/xml/datatype/XMLGregorianCalendar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="327" column="7" lean-forward="true" selection-start-line="327" selection-start-column="7" selection-end-line="327" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_144/src.zip!/java/time/format/DateTimeFormatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1088">
+          <caret line="763" column="42" selection-start-line="763" selection-start-column="42" selection-end-line="763" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/generatedPos/com/catmovies/webservices/service/CatEyePo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="67" column="13" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
+          <folding>
+            <element signature="e#7622#7623#0" expanded="true" />
+            <element signature="e#7653#7654#0" expanded="true" />
+            <element signature="e#7701#7702#0" expanded="true" />
+            <element signature="e#7741#7742#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/generatedPos/com/catmovies/webservices/service/CatReviewPo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="55" column="31" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/CatmoviesApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/ws/spring-xml/3.0.1.RELEASE/spring-xml-3.0.1.RELEASE.jar!/org/springframework/xml/xsd/commons/CommonsXsdSchema.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-504">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/ws/spring-xml/3.0.1.RELEASE/spring-xml-3.0.1.RELEASE.jar!/org/springframework/xml/xsd/XsdSchema.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/ws/spring-xml/3.0.1.RELEASE/spring-xml-3.0.1.RELEASE.jar!/org/springframework/xml/xsd/SimpleXsdSchema.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-568">
+          <caret line="34" column="11" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catmovies/src/main/resources/GetAllMoviesRequest.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catmovies/src/main/resources/GetAllMoviesResponse.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="888">
+          <caret line="37" column="19" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="37" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catmovies/src/main/resources/GetAllTheatresRequest.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catmovies/src/main/resources/GetAllTheatresResponse.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="42" column="19" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="42" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/test/GetCourseRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/test/GetCourseResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/webservices/CourseEndPoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="22" column="59" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/generatedPos/com/catmovies/webservices/service/GetAllMoviesResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="e#2076#2077#0" expanded="true" />
+            <element signature="e#2106#2107#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/catpo/CatEyePo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="118" column="18" selection-start-line="118" selection-start-column="18" selection-end-line="118" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/ws/spring-ws-core/3.0.1.RELEASE/spring-ws-core-3.0.1.RELEASE.jar!/org/springframework/ws/wsdl/wsdl11/Wsdl11Definition.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/ws/spring-ws-core/3.0.1.RELEASE/spring-ws-core-3.0.1.RELEASE.jar!/org/springframework/ws/wsdl/wsdl11/DefaultWsdl11Definition.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="18" column="54" selection-start-line="18" selection-start-column="54" selection-end-line="18" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/dao/CatMovieGetter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/catpo/CatTicketPo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/dao/CatMovieGetterMock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/catpo/CatTheatrePo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-409">
+          <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/generatedPos/com/catmovies/webservices/service/CatTicketPo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="98" column="7" lean-forward="true" selection-start-line="98" selection-start-column="7" selection-end-line="98" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/generatedPos/com/catmovies/webservices/service/CatTheatrePo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="79" column="33" lean-forward="true" selection-start-line="79" selection-start-column="33" selection-end-line="79" selection-end-column="33" />
+          <folding>
+            <element signature="e#8247#8248#0" expanded="true" />
+            <element signature="e#8289#8290#0" expanded="true" />
+            <element signature="e#10911#10912#0" expanded="true" />
+            <element signature="e#10961#10962#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/ws/spring-ws-core/3.0.1.RELEASE/spring-ws-core-3.0.1.RELEASE.jar!/org/springframework/ws/server/endpoint/annotation/PayloadRoots.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/config/WebServiceConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="32" column="56" lean-forward="true" selection-start-line="32" selection-start-column="56" selection-end-line="32" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/generatedPos/com/catmovies/webservices/service/GetAllMoviesRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/generatedPos/com/catmovies/webservices/service/GetAllTheatresRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="36" column="45" selection-start-line="36" selection-start-column="24" selection-end-line="36" selection-end-column="45" />
+          <folding>
+            <element signature="e#1291#1292#0" expanded="true" />
+            <element signature="e#1321#1322#0" expanded="true" />
+            <element signature="e#1499#1500#0" expanded="true" />
+            <element signature="e#1535#1536#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/generatedPos/com/catmovies/webservices/service/GetAllTheatresResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="44" column="7" lean-forward="true" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
+          <folding>
+            <element signature="e#2108#2109#0" expanded="true" />
+            <element signature="e#2138#2139#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/webservices/CatMovieEndpoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-338">
+          <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catmovies/src/main/resources/CatMovies.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="13" column="22" lean-forward="true" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catmovies/src/main/java/com/example/catmovies/generatedPos/com/example/webservices/service/Course.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="54" column="11" lean-forward="true" selection-start-line="54" selection-start-column="11" selection-end-line="54" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catmovies/src/main/resources/Course.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/integration/src/main/java/com/example/integration/po/catpo/CatTicketPo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
         </state>
       </provider>
     </entry>

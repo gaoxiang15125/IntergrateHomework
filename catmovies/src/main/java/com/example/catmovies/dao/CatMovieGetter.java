@@ -1,7 +1,5 @@
 package com.example.catmovies.dao;
 
-
-
 import com.example.catmovies.catpo.CatEyePo;
 import com.example.catmovies.catpo.CatTheatrePo;
 import java.util.Vector;
