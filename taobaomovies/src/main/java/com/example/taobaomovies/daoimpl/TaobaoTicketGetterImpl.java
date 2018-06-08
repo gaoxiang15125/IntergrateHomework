@@ -53,15 +53,19 @@ public class TaobaoTicketGetterImpl {
         Connection conn = taobaoTools.connection;
         PreparedStatement pstmt = null;
         HashMap<String,Vector<TaoBaoTicketPo>> catTicketPos = new HashMap<String, Vector<TaoBaoTicketPo>>();
-        String sql = "select * from  taobao.ticket where theatre = ?";
+        String sql = "select * from  taobao.ticket where taobao.ticket.theatre = ?";
         try {
-            pstmt = (PreparedStatement)conn.prepareStatement(sql);
+            pstmt = conn.prepareStatement(sql);
             pstmt.setString(1,theatre);
+
             ResultSet rs = pstmt.executeQuery();
+            //System.out.println(sql);
             //int col = rs.getMetaData().getColumnCount();
             if(rs.next()){
 
             }else{
+                //System.out.println(pstmt);
+                //System.out.println(conn);
                 return null;
             }
             String bufferFilm = rs.getString("film");

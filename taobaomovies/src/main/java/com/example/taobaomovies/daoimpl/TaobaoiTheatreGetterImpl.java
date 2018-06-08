@@ -48,7 +48,7 @@ public class TaobaoiTheatreGetterImpl {
     public Vector<TaoBaoTheatrePo> getTheatreAll(){
         //taobaoTools.reGetConnection();
         Connection conn = taobaoTools.connection;
-        String sql = "select * from taobao.theatre ";
+        String sql = "select * from taobao.theatre";
         PreparedStatement pstmt;
         Vector<TaoBaoTheatrePo> catReviewPos = new Vector<TaoBaoTheatrePo>();
         try {
@@ -63,6 +63,7 @@ public class TaobaoiTheatreGetterImpl {
                 taoBaoTheatrePo.setTheatre_Address(rs.getString("address"));
                 taoBaoTheatrePo.setTheatre_Phone(rs.getString("phone"));
                 taoBaoTheatrePo.setUser_score(rs.getDouble("score"));
+                System.out.println(name);
                 taoBaoTheatrePo.setTickets(taobaoTicketGetter.getTicketByTheatre(name));
                 catReviewPos.add(taoBaoTheatrePo);
             }

@@ -13,7 +13,7 @@ public class CatTools {
     //mysql驱动包名
     private static final String DRIVER_NAME = "com.mysql.cj.jdbc.Driver";
     //数据库连接地址
-    private static final String URL = "jdbc:mysql://106.14.170.25:3306/film?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC\n";
+    private static final String URL = "jdbc:mysql://106.14.170.25:3306/film?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC\n";
     //用户名
     private static final String USER_NAME = "root";
     //密码

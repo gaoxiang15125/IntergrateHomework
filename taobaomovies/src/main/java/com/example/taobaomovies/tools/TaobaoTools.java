@@ -1,5 +1,7 @@
 package com.example.taobaomovies.tools;
 
+import com.example.taobaomovies.database.TaoBaoImpl;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -16,7 +18,7 @@ public class TaobaoTools {
     //mysql驱动包名
     private static final String DRIVER_NAME = "com.mysql.cj.jdbc.Driver";
     //数据库连接地址
-    private static final String URL = "jdbc:mysql://106.14.170.25:3306/taobao?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC\n";
+    private static final String URL = "jdbc:mysql://106.14.170.25:3306/taobao?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC\n";
     //用户名
     private static final String USER_NAME = "root";
     //密码
@@ -80,6 +82,8 @@ public class TaobaoTools {
     }
 
     public static void main(String[]args){
-        new TaobaoTools();
+
+        TaoBaoImpl taoBao = new TaoBaoImpl();
+        //System.out.println(taoBao.taobaoTicketGetter.getTicketByTheatre("CGV影城(百家湖店)"));
     }
 }
