@@ -87,4 +87,9 @@ public class CatFilmGetterImpl {
         //catTools.closeConnection();
         return catReviewPos;
     }
+
+    public static void main(String[] args) {
+        System.out.println(new CatFilmGetterImpl().getAllFilm());
+        // ??????????? null?
+    }
 }

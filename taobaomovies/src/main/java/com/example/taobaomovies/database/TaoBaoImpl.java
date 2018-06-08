@@ -6,6 +6,7 @@ import com.example.taobaomovies.daoimpl.TaobaoTicketGetterImpl;
 import com.example.taobaomovies.daoimpl.TaobaoiTheatreGetterImpl;
 import com.example.taobaomovies.taobaopo.TaoBaoPo;
 import com.example.taobaomovies.taobaopo.TaoBaoTheatrePo;
+import org.springframework.stereotype.Repository;
 
 import java.util.Vector;
 
@@ -15,6 +16,7 @@ import java.util.Vector;
  * @author: gaoxiang
  * @create: 2018-06-06 21:45
  **/
+@Repository
 public class TaoBaoImpl implements TaoBaoMovieGitter {
 
     //操作具体实现类

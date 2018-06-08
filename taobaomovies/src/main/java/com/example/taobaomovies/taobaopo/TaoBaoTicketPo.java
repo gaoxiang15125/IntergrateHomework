@@ -8,7 +8,6 @@ package com.example.taobaomovies.taobaopo;
  **/
 public class TaoBaoTicketPo {
 
-
     private String begin_Time;
     private String end_Time;
     private String movie_Langage;

@@ -7,6 +7,7 @@ import com.example.catmovies.catpo.CatTheatrePo;
 import com.example.catmovies.dao.CatMovieGetter;
 import com.example.catmovies.daoimpl.CatFilmGetterImpl;
 import com.example.catmovies.daoimpl.CatTheatreGetterImpl;
+import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;
 import java.util.Vector;
@@ -17,6 +18,7 @@ import java.util.Vector;
  * @author: gaoxiang
  * @create: 2018-06-04 16:06
  **/
+@Repository
 public class CatGetter implements CatMovieGetter {
 
     private CatFilmGetterImpl catFilmGetter ;

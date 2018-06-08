@@ -15,6 +15,9 @@ public class TaoBaoTicketPo {
     private double now_Money;
     private double original_Money;
 
+    public TaoBaoTicketPo() {
+    }
+
     public TaoBaoTicketPo(String begin_Time, String end_Time, String movie_Langage, String video_Hall, double now_Money, double original_Money) {
         this.begin_Time = begin_Time;
         this.end_Time = end_Time;

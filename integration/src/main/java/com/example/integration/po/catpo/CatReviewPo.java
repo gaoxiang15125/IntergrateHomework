@@ -1,107 +1,193 @@
+//
+// 此文件是由 JavaTM Architecture for XML Binding (JAXB) 引用实现 v2.2.7 生成的
+// 请访问 <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// 在重新编译源模式时, 对此文件的所有修改都将丢失。
+// 生成时间: 2018.06.06 时间 09:50:00 PM CST 
+//
+
+
 package com.example.integration.po.catpo;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlType;
+
+
+/**
+ * <p>catReviewPo complex type的 Java 类。
+ * 
+ * <p>以下模式片段指定包含在此类中的预期内容。
+ * 
+ * <pre>
+ * &lt;complexType name="catReviewPo">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="review_Time" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="review_score" type="{http://www.w3.org/2001/XMLSchema}double"/>
+ *         &lt;element name="reviews" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="thumb_UP" type="{http://www.w3.org/2001/XMLSchema}int"/>
+ *         &lt;element name="user_Image" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="user_Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
+ */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "catReviewPo", propOrder = {
+    "reviewTime",
+    "reviewScore",
+    "reviews",
+    "thumbUP",
+    "userImage",
+    "userName"
+})
 public class CatReviewPo {
 
+    @XmlElement(name = "review_Time")
+    protected String reviewTime;
+    @XmlElement(name = "review_score")
+    protected double reviewScore;
+    @XmlElement(name = "reviews")
+    protected String reviews;
+    @XmlElement(name = "thumb_UP")
+    protected int thumbUP;
+    @XmlElement(name = "user_Image")
+    protected String userImage;
+    @XmlElement(name = "user_Name")
+    protected String userName;
+
     /**
-     * 本类是电影短评的存储类
-     * 属性意义：
-     * 用户名称
-     * 评论时间
-     * 用户评分
-     * 评论详细内容
-     * 点赞数
+     * 获取reviewTime属性的值。
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
-    private String user_Image;
-    private String user_Name;
-    private String review_Time;
-    private double review_score;
-    private String reviews;
-    private int thumb_UP;
-
-    public CatReviewPo() {
-
-    }
-
-    public CatReviewPo(String user_Image, String user_Name, String review_Time, double review_score, String reviews, int thumb_UP) {
-        this.user_Image = user_Image;
-        this.user_Name = user_Name;
-        this.review_Time = review_Time;
-        this.review_score = review_score;
-        this.reviews = reviews;
-        this.thumb_UP =thumb_UP;
-    }
-
-    public String getUser_Image() {
-        return user_Image;
+    public String getReviewTime() {
+        return reviewTime;
     }
 
     /**
-     * 用户照片
-     * @param user_Image
+     * 设置reviewTime属性的值。
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
-    public void setUser_Image(String user_Image) {
-        this.user_Image = user_Image;
+    public void setReviewTime(String value) {
+        this.reviewTime = value;
     }
 
     /**
-     *
-     * @return 用户照片
+     * 获取reviewScore属性的值。
+     * 
      */
-    public String getUser_Name() {
-        return user_Name;
-    }
-
-    public void setUser_Name(String user_Name) {
-        this.user_Name = user_Name;
+    public double getReviewScore() {
+        return reviewScore;
     }
 
     /**
-     *
-     * @return 评论时间
+     * 设置reviewScore属性的值。
+     * 
      */
-    public String getReview_Time() {
-        return review_Time;
-    }
-
-    public void setReview_Time(String review_Time) {
-        this.review_Time = review_Time;
+    public void setReviewScore(double value) {
+        this.reviewScore = value;
     }
 
     /**
-     *
-     * @return 用户评分
-     */
-    public double getReview_score() {
-        return review_score;
-    }
-
-    public void setReview_score(double review_score) {
-        this.review_score = review_score;
-    }
-
-    /**
-     *
-     * @return 用户详细评论信息
+     * 获取reviews属性的值。
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getReviews() {
         return reviews;
     }
 
-    public void setReviews(String reviews) {
-        this.reviews = reviews;
+    /**
+     * 设置reviews属性的值。
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setReviews(String value) {
+        this.reviews = value;
     }
 
     /**
-     *
-     * @return 该条评论点赞数
+     * 获取thumbUP属性的值。
+     * 
      */
-    public int getThumb_UP() {
-        return thumb_UP;
+    public int getThumbUP() {
+        return thumbUP;
     }
 
-    public void setThumb_UP(int thumb_UP) {
-        this.thumb_UP = thumb_UP;
+    /**
+     * 设置thumbUP属性的值。
+     * 
+     */
+    public void setThumbUP(int value) {
+        this.thumbUP = value;
     }
 
+    /**
+     * 获取userImage属性的值。
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getUserImage() {
+        return userImage;
+    }
+
+    /**
+     * 设置userImage属性的值。
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setUserImage(String value) {
+        this.userImage = value;
+    }
+
+    /**
+     * 获取userName属性的值。
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getUserName() {
+        return userName;
+    }
+
+    /**
+     * 设置userName属性的值。
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setUserName(String value) {
+        this.userName = value;
+    }
 
 }

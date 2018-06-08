@@ -1,129 +1,396 @@
+//
+// 此文件是由 JavaTM Architecture for XML Binding (JAXB) 引用实现 v2.2.7 生成的
+// 请访问 <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// 在重新编译源模式时, 对此文件的所有修改都将丢失。
+// 生成时间: 2018.06.06 时间 09:50:00 PM CST 
+//
+
+
 package com.example.integration.po.catpo;
 
-import java.util.HashMap;
-import java.util.Vector;
+import javax.xml.bind.annotation.*;
+import java.util.ArrayList;
+import java.util.List;
+
 
 /**
- * @program: IntegrateHomework
- * @description: 猫眼售票系统中的影院信息类，用于存储影院信息。
- * @author: Mr.Wang
- * @create: 2018-06-01 19:45
- **/
+ * <p>catTheatrePo complex type的 Java 类。
+ * 
+ * <p>以下模式片段指定包含在此类中的预期内容。
+ * 
+ * <pre>
+ * &lt;complexType name="catTheatrePo">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="seaverUsable" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="theatre" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="theatre_Address" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="theatre_Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="theatre_Phone" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="tickets">
+ *           &lt;complexType>
+ *             &lt;complexContent>
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                 &lt;sequence>
+ *                   &lt;element name="entry" maxOccurs="unbounded" minOccurs="0">
+ *                     &lt;complexType>
+ *                       &lt;complexContent>
+ *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *                           &lt;sequence>
+ *                             &lt;element name="key" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *                             &lt;element name="value" type="{http://catmovies.com/webservices/service}catTicketPo" maxOccurs="unbounded" minOccurs="0"/>
+ *                           &lt;/sequence>
+ *                         &lt;/restriction>
+ *                       &lt;/complexContent>
+ *                     &lt;/complexType>
+ *                   &lt;/element>
+ *                 &lt;/sequence>
+ *               &lt;/restriction>
+ *             &lt;/complexContent>
+ *           &lt;/complexType>
+ *         &lt;/element>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
+ */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "catTheatrePo", propOrder = {
+    "seaverUsable",
+    "theatre",
+    "theatreAddress",
+    "theatreName",
+    "theatrePhone",
+    "tickets"
+})
+@XmlRootElement(name = "catTheatrePo",namespace = "http://catmovies.com/webservices/service")
 public class CatTheatrePo {
 
-    private String theatre;
-    private String theatre_Name;
-    private String theatre_Address;
-    private String theatre_Phone;
-    private String seaverUsable;
-    private HashMap<String,Vector<CatTicketPo>> tickets;
+    @XmlElement(name = "seaverUsable")
+    protected String seaverUsable;
+    @XmlElement(name = "theatre")
+    protected String theatre;
+    @XmlElement(name = "theatre_Address")
+    protected String theatreAddress;
+    @XmlElement(name = "theatre_Name")
+    protected String theatreName;
+    @XmlElement(name = "theatre_Phone")
+    protected String theatrePhone;
 
-
-    public CatTheatrePo() {
-    }
-
-    /**
-     * 未初始化电影场次信息的构造方法
-     * @param theatre
-     * @param theatre_Name
-     * @param theatre_Address
-     * @param theatre_Phone
-     * @param seaverUsable
-     */
-    public CatTheatrePo(String theatre, String theatre_Name, String theatre_Address, String theatre_Phone, String seaverUsable) {
-        this.theatre = theatre;
-        this.theatre_Name = theatre_Name;
-        this.theatre_Address = theatre_Address;
-        this.theatre_Phone = theatre_Phone;
-        this.seaverUsable = seaverUsable;
-    }
-
-    public CatTheatrePo(String theatre, String theatre_Name, String theatre_Address, String theatre_Phone, String seaver, HashMap<String, Vector<CatTicketPo>> tickets) {
-        this.theatre = theatre;
-
-        this.theatre_Name = theatre_Name;
-        this.theatre_Address = theatre_Address;
-        this.theatre_Phone = theatre_Phone;
-        this.seaverUsable = seaver;
-        this.tickets = tickets;
-    }
+    @XmlElement(required = true,name = "tickets",namespace = "http://catmovies.com/webservices/service")
+    protected CatTheatrePo.Tickets tickets;
 
     /**
+     * 获取seaverUsable属性的值。
      *
-     * @return 获取本电影院的所有场次信息 key是电影名称，值是该电影在该影院所有场次信息
-     */
-    public HashMap<String, Vector<CatTicketPo>> getTickets() {
-        return tickets;
-    }
-
-    public void setTickets(HashMap<String, Vector<CatTicketPo>> tickets) {
-        this.tickets = tickets;
-    }
-
-    public CatTheatrePo(String theatre_Name, String theatre_Address, String theatre_Phone, String seaver) {
-        this.theatre_Name = theatre_Name;
-        this.theatre_Address = theatre_Address;
-        this.theatre_Phone = theatre_Phone;
-        this.seaverUsable = seaver;
-    }
-
-    /**
+     * @return
+     *     possible object is
+     *     {@link String }
      *
-     * @return 影院的名称
-     */
-    public String getTheatre_Name() {
-        return theatre_Name;
-    }
-
-    public void setTheatre_Name(String theatre_Name) {
-        this.theatre_Name = theatre_Name;
-    }
-
-    /**
-     *
-     * @return 影院的地址
-     */
-    public String getTheatre_Address() {
-        return theatre_Address;
-    }
-
-    public void setTheatre_Address(String theatre_Address) {
-        this.theatre_Address = theatre_Address;
-    }
-
-    /**
-     *
-     * @return 影院的联系电话
-     */
-    public String getTheatre_Phone() {
-        return theatre_Phone;
-    }
-
-    public void setTheatre_Phone(String theatre_Phone) {
-        this.theatre_Phone = theatre_Phone;
-    }
-
-    /**
-     *
-     * @return 影院可以提供的服务（大概是是否提供眼镜，停车、儿童免票等等）
      */
     public String getSeaverUsable() {
         return seaverUsable;
     }
 
-    public void setSeaverUsable(String seaverUsable) {
-        this.seaverUsable = seaverUsable;
+    /**
+     * 设置seaverUsable属性的值。
+     *
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *
+     */
+    public void setSeaverUsable(String value) {
+        this.seaverUsable = value;
     }
 
     /**
+     * 获取theatre属性的值。
      *
-     * @return 获取影院图片
+     * @return
+     *     possible object is
+     *     {@link String }
+     *
      */
     public String getTheatre() {
         return theatre;
     }
 
-    public void setTheatre(String theatre) {
-        this.theatre = theatre;
+    /**
+     * 设置theatre属性的值。
+     *
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *
+     */
+    public void setTheatre(String value) {
+        this.theatre = value;
     }
+
+    /**
+     * 获取theatreAddress属性的值。
+     *
+     * @return
+     *     possible object is
+     *     {@link String }
+     *
+     */
+    public String getTheatreAddress() {
+        return theatreAddress;
+    }
+
+    /**
+     * 设置theatreAddress属性的值。
+     *
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *
+     */
+    public void setTheatreAddress(String value) {
+        this.theatreAddress = value;
+    }
+
+    /**
+     * 获取theatreName属性的值。
+     *
+     * @return
+     *     possible object is
+     *     {@link String }
+     *
+     */
+    public String getTheatreName() {
+        return theatreName;
+    }
+
+    /**
+     * 设置theatreName属性的值。
+     *
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *
+     */
+    public void setTheatreName(String value) {
+        this.theatreName = value;
+    }
+
+    /**
+     * 获取theatrePhone属性的值。
+     *
+     * @return
+     *     possible object is
+     *     {@link String }
+     *
+     */
+    public String getTheatrePhone() {
+        return theatrePhone;
+    }
+
+    /**
+     * 设置theatrePhone属性的值。
+     *
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *
+     */
+    public void setTheatrePhone(String value) {
+        this.theatrePhone = value;
+    }
+
+    /**
+     * 获取tickets属性的值。
+     *
+     * @return
+     *     possible object is
+     *     {@link CatTheatrePo.Tickets }
+     *
+     */
+    public CatTheatrePo.Tickets getTickets() {
+        return tickets;
+    }
+
+    /**
+     * 设置tickets属性的值。
+     *
+     * @param value
+     *     allowed object is
+     *     {@link CatTheatrePo.Tickets }
+     *
+     */
+    public void setTickets(CatTheatrePo.Tickets value) {
+        this.tickets = value;
+    }
+
+
+    /**
+     * <p>anonymous complex type的 Java 类。
+     *
+     * <p>以下模式片段指定包含在此类中的预期内容。
+     *
+     * <pre>
+     * &lt;complexType>
+     *   &lt;complexContent>
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *       &lt;sequence>
+     *         &lt;element name="entry" maxOccurs="unbounded" minOccurs="0">
+     *           &lt;complexType>
+     *             &lt;complexContent>
+     *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+     *                 &lt;sequence>
+     *                   &lt;element name="key" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+     *                   &lt;element name="value" type="{http://catmovies.com/webservices/service}catTicketPo" maxOccurs="unbounded" minOccurs="0"/>
+     *                 &lt;/sequence>
+     *               &lt;/restriction>
+     *             &lt;/complexContent>
+     *           &lt;/complexType>
+     *         &lt;/element>
+     *       &lt;/sequence>
+     *     &lt;/restriction>
+     *   &lt;/complexContent>
+     * &lt;/complexType>
+     * </pre>
+     *
+     *
+     */
+    @XmlAccessorType(XmlAccessType.FIELD)
+    @XmlType(name = "", propOrder = {
+        "entry"
+    })
+    public static class Tickets {
+
+        @XmlElement(name = "entries",namespace = "http://catmovies.com/webservices/service")
+        protected List<Entry> entry;
+
+        /**
+         * Gets the value of the entry property.
+         *
+         * <p>
+         * This accessor method returns a reference to the live list,
+         * not a snapshot. Therefore any modification you make to the
+         * returned list will be present inside the JAXB object.
+         * This is why there is not a <CODE>set</CODE> method for the entry property.
+         *
+         * <p>
+         * For example, to add a new item, do as follows:
+         * <pre>
+         *    getEntry().add(newItem);
+         * </pre>
+         *
+         *
+         * <p>
+         * Objects of the following type(s) are allowed in the list
+         * {@link CatTheatrePo.Tickets.Entry }
+         *
+         *
+         */
+        public List<Entry> getEntry() {
+            if (entry == null) {
+                entry = new ArrayList<Entry>();
+            }
+            return this.entry;
+        }
+
+        public void setEntry(List<Entry> entry) {
+            this.entry = entry;
+        }
+
+        /**
+         * <p>anonymous complex type的 Java 类。
+         * 
+         * <p>以下模式片段指定包含在此类中的预期内容。
+         * 
+         * <pre>
+         * &lt;complexType>
+         *   &lt;complexContent>
+         *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+         *       &lt;sequence>
+         *         &lt;element name="key" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+         *         &lt;element name="value" type="{http://catmovies.com/webservices/service}catTicketPo" maxOccurs="unbounded" minOccurs="0"/>
+         *       &lt;/sequence>
+         *     &lt;/restriction>
+         *   &lt;/complexContent>
+         * &lt;/complexType>
+         * </pre>
+         * 
+         * 
+         */
+        @XmlAccessorType(XmlAccessType.FIELD)
+        @XmlType(name = "", propOrder = {
+            "key",
+            "value"
+        },namespace = "http://catmovies.com/webservices/service")
+        public static class Entry {
+
+            @XmlElement(name = "key")
+            protected String key;
+            @XmlElement(name = "value",namespace = "http://catmovies.com/webservices/service")
+            protected List<CatTicketPo> value;
+
+            /**
+             * 获取key属性的值。
+             * 
+             * @return
+             *     possible object is
+             *     {@link String }
+             *     
+             */
+            public String getKey() {
+                return key;
+            }
+
+            /**
+             * 设置key属性的值。
+             * 
+             * @param value
+             *     allowed object is
+             *     {@link String }
+             *     
+             */
+            public void setKey(String value) {
+                this.key = value;
+            }
+
+            /**
+             * Gets the value of the value property.
+             * 
+             * <p>
+             * This accessor method returns a reference to the live list,
+             * not a snapshot. Therefore any modification you make to the
+             * returned list will be present inside the JAXB object.
+             * This is why there is not a <CODE>set</CODE> method for the value property.
+             * 
+             * <p>
+             * For example, to add a new item, do as follows:
+             * <pre>
+             *    getValue().add(newItem);
+             * </pre>
+             * 
+             * 
+             * <p>
+             * Objects of the following type(s) are allowed in the list
+             * {@link CatTicketPo }
+             * 
+             * 
+             */
+            public List<CatTicketPo> getValue() {
+                if (value == null) {
+                    value = new ArrayList<CatTicketPo>();
+                }
+                return this.value;
+            }
+
+            public void setValue(List<CatTicketPo> value) {
+                this.value = value;
+            }
+        }
+
+    }
+
 }

@@ -1,87 +1,173 @@
+//
+// 此文件是由 JavaTM Architecture for XML Binding (JAXB) 引用实现 v2.2.7 生成的
+// 请访问 <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// 在重新编译源模式时, 对此文件的所有修改都将丢失。
+// 生成时间: 2018.06.06 时间 09:50:00 PM CST 
+//
+
+
 package com.example.integration.po.catpo;
 
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlType;
+
+
 /**
- * @program: IntegrateHomework
- * @description: 单个场次信息存储类 存储影院内的场次，价格信息等
- * @author: Mr.Wang
- * @create: 2018-06-01 20:05
- **/
+ * <p>catTicketPo complex type的 Java 类。
+ * 
+ * <p>以下模式片段指定包含在此类中的预期内容。
+ * 
+ * <pre>
+ * &lt;complexType name="catTicketPo">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="begin_Time" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="end_Time" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="money" type="{http://www.w3.org/2001/XMLSchema}double"/>
+ *         &lt;element name="movie_Langage" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="video_Hall" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
+ */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "catTicketPo", propOrder = {
+    "beginTime",
+    "endTime",
+    "money",
+    "movieLangage",
+    "videoHall"
+},namespace = "http://catmovies.com/webservices/service")
 public class CatTicketPo {
 
-    private String begin_Time;
-    private String end_Time;
-    private String movie_Langage;
-    private String Video_Hall;
-    private double money;
-
-    public CatTicketPo() {
-    }
-
-    public CatTicketPo(String begin_Time, String end_Time, String movie_Langage, String video_Hall, double money) {
-        this.begin_Time = begin_Time;
-        this.end_Time = end_Time;
-        this.movie_Langage = movie_Langage;
-        Video_Hall = video_Hall;
-        this.money = money;
-    }
+    @XmlElement(name = "begin_Time")
+    protected String beginTime;
+    @XmlElement(name = "end_Time")
+    protected String endTime;
+    @XmlElement(name = "money")
+    protected double money;
+    @XmlElement(name = "movie_Langage")
+    protected String movieLangage;
+    @XmlElement(name = "video_Hall")
+    protected String videoHall;
 
     /**
-     *
-     * @return 本场次电影的开场时间
+     * 获取beginTime属性的值。
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
-    public String getBegin_Time() {
-        return begin_Time;
-    }
-
-    public void setBegin_Time(String begin_Time) {
-        this.begin_Time = begin_Time;
+    public String getBeginTime() {
+        return beginTime;
     }
 
     /**
-     *
-     * @return 本场次电影的结束时间
+     * 设置beginTime属性的值。
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
-    public String getEnd_Time() {
-        return end_Time;
-    }
-
-    public void setEnd_Time(String end_Time) {
-        this.end_Time = end_Time;
+    public void setBeginTime(String value) {
+        this.beginTime = value;
     }
 
     /**
-     *
-     * @return 本场次电影的语言
+     * 获取endTime属性的值。
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
-    public String getMovie_Langage() {
-        return movie_Langage;
-    }
-
-    public void setMovie_Langage(String movie_Langage) {
-        this.movie_Langage = movie_Langage;
+    public String getEndTime() {
+        return endTime;
     }
 
     /**
-     *
-     * @return 本场次电影的赢得放映厅
+     * 设置endTime属性的值。
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
-    public String getVideo_Hall() {
-        return Video_Hall;
-    }
-
-    public void setVideo_Hall(String video_Hall) {
-        Video_Hall = video_Hall;
+    public void setEndTime(String value) {
+        this.endTime = value;
     }
 
     /**
-     *
-     * @return 电影票的价格
+     * 获取money属性的值。
+     * 
      */
     public double getMoney() {
         return money;
     }
 
-    public void setMoney(double money) {
-        this.money = money;
+    /**
+     * 设置money属性的值。
+     * 
+     */
+    public void setMoney(double value) {
+        this.money = value;
     }
+
+    /**
+     * 获取movieLangage属性的值。
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getMovieLangage() {
+        return movieLangage;
+    }
+
+    /**
+     * 设置movieLangage属性的值。
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setMovieLangage(String value) {
+        this.movieLangage = value;
+    }
+
+    /**
+     * 获取videoHall属性的值。
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getVideoHall() {
+        return videoHall;
+    }
+
+    /**
+     * 设置videoHall属性的值。
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setVideoHall(String value) {
+        this.videoHall = value;
+    }
+
 }

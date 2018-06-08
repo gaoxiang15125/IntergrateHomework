@@ -1,233 +1,371 @@
+//
+// 此文件是由 JavaTM Architecture for XML Binding (JAXB) 引用实现 v2.2.7 生成的
+// 请访问 <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// 在重新编译源模式时, 对此文件的所有修改都将丢失。
+// 生成时间: 2018.06.06 时间 09:50:00 PM CST 
+//
+
+
 package com.example.integration.po.catpo;
 
-import java.util.Date;
-import java.util.Vector;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlType;
+import java.util.ArrayList;
+import java.util.List;
 
+
+/**
+ * <p>catEyePo complex type的 Java 类。
+ * 
+ * <p>以下模式片段指定包含在此类中的预期内容。
+ * 
+ * <pre>
+ * &lt;complexType name="catEyePo">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="booking_Office" type="{http://www.w3.org/2001/XMLSchema}double"/>
+ *         &lt;element name="catReviewPoVector" type="{http://catmovies.com/webservices/service}catReviewPo" maxOccurs="unbounded" minOccurs="0"/>
+ *         &lt;element name="introduction" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="lasting_Time" type="{http://www.w3.org/2001/XMLSchema}double"/>
+ *         &lt;element name="movie_English_Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="movie_Name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="movie_Pic" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="shoot_Place" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="show_Place" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="show_Time" type="{http://www.w3.org/2001/XMLSchema}dateTime" minOccurs="0"/>
+ *         &lt;element name="types" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="user_NUM" type="{http://www.w3.org/2001/XMLSchema}double"/>
+ *         &lt;element name="user_Score" type="{http://www.w3.org/2001/XMLSchema}double"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
+ */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "catEyePo", propOrder = {
+    "bookingOffice",
+    "catReviewPoVector",
+    "introduction",
+    "lastingTime",
+    "movieEnglishName",
+    "movieName",
+    "moviePic",
+    "shootPlace",
+    "showPlace",
+    "showTime",
+    "types",
+    "userNUM",
+    "userScore"
+})
 public class CatEyePo {
+
+    @XmlElement(name = "booking_Office")
+    protected double bookingOffice;
+    @XmlElement(nillable = true)
+    protected List<CatReviewPo> catReviewPoVector;
+    protected String introduction;
+    @XmlElement(name = "lasting_Time")
+    protected double lastingTime;
+    @XmlElement(name = "movie_English_Name")
+    protected String movieEnglishName;
+    @XmlElement(name = "movie_Name")
+    protected String movieName;
+    @XmlElement(name = "movie_Pic")
+    protected String moviePic;
+    @XmlElement(name = "shoot_Place")
+    protected String shootPlace;
+
+    @XmlElement(name = "show_Place")
+    protected String showPlace;
+
+    @XmlElement(name = "show_Time")
+    protected String showTime;
+
+    @XmlElement(name = "types")
+    protected String types;
+
+    @XmlElement(name = "user_NUM")
+    protected double userNUM;
+
+    @XmlElement(name = "user_Score")
+    protected double userScore;
+
     /**
-     * 猫眼电影信息存储类
-     * 属性意义依次是：
-     * 电影图片
-     * 电影名
-     * 英文电影名
-     * 电影类型：推荐使用string的match方法进行检索区分
-     * 电影拍摄地区（他写个中国大陆我也不知道是什么意思）
-     * 电影时长
-     * 电影上映时间
-     * 电影上映地址
-     * 电影用户评分
-     * 评价用户数量
-     * 电影票房
-     * 电影简介
-     * 观众评价（额，卖票的不会上差评，对吧）,观众评价用向量存储的（预防线程错误）
+     * 获取bookingOffice属性的值。
+     * 
      */
-    private String movie_Pic;
-    private String movie_Name;
-    private String movie_English_Name;
-    private String types;
-    private String shoot_Place;
-    private double lasting_Time;
-    private Date show_Time;
-    private String show_Place;
-    private double user_Score;
-    private double user_NUM;
-    private double booking_Office;
-    private String introduction;
-    private Vector<CatReviewPo> catReviewPoVector;
-
-    public CatEyePo() {
+    public double getBookingOffice() {
+        return bookingOffice;
     }
 
     /**
-     *不实例化用户评论的构造方法
+     * 设置bookingOffice属性的值。
+     * 
      */
-    public CatEyePo(String movie_Pic, String movie_Name, String movie_English_Name, String types, String shoot_Place, double lasting_Time, Date show_Time, String show_Place, double user_Score, double user_NUM, double booking_Office, String introduction) {
-        this.movie_Pic = movie_Pic;
-        this.movie_Name = movie_Name;
-        this.movie_English_Name = movie_English_Name;
-        this.types = types;
-        this.shoot_Place = shoot_Place;
-        this.lasting_Time = lasting_Time;
-        this.show_Time = show_Time;
-        this.show_Place = show_Place;
-        this.user_Score = user_Score;
-        this.user_NUM = user_NUM;
-        this.booking_Office = booking_Office;
-        this.introduction = introduction;
+    public void setBookingOffice(double value) {
+        this.bookingOffice = value;
     }
 
     /**
-     *实例化用户评价信息的构造方法
+     * Gets the value of the catReviewPoVector property.
+     * 
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the catReviewPoVector property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getCatReviewPoVector().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link CatReviewPo }
+     * 
+     * 
      */
-    public CatEyePo(String movie_Pic, String movie_Name, String movie_English_Name, String types, String shoot_Place, double lasting_Time, Date show_Time, String show_Place, double user_Score, double user_NUM, double booking_Office, String introduction, Vector<CatReviewPo> catReviewPoVector) {
-        this.movie_Pic = movie_Pic;
-        this.movie_Name = movie_Name;
-        this.movie_English_Name = movie_English_Name;
-        this.types = types;
-        this.shoot_Place = shoot_Place;
-        this.lasting_Time = lasting_Time;
-        this.show_Time = show_Time;
-        this.show_Place = show_Place;
-        this.user_Score = user_Score;
-        this.user_NUM = user_NUM;
-        this.booking_Office = booking_Office;
-        this.introduction = introduction;
-        this.catReviewPoVector = catReviewPoVector;
+    public List<CatReviewPo> getCatReviewPoVector() {
+        if (catReviewPoVector == null) {
+            catReviewPoVector = new ArrayList<CatReviewPo>();
+        }
+        return this.catReviewPoVector;
     }
 
     /**
-     *
-     * @return 电影海报
-     */
-    public String getMovie_Pic() {
-        return movie_Pic;
-    }
-
-    public void setMovie_Pic(String movie_Pic) {
-        this.movie_Pic = movie_Pic;
-    }
-
-    /**
-     *
-     * @return 电影名称
-     */
-    public String getMovie_Name() {
-        return movie_Name;
-    }
-
-    public void setMovie_Name(String movie_Name) {
-        this.movie_Name = movie_Name;
-    }
-
-    /**
-     *
-     * @return 电影英文名
-     */
-    public String getMovie_English_Name() {
-        return movie_English_Name;
-    }
-
-    public void setMovie_English_Name(String movie_English_Name) {
-        this.movie_English_Name = movie_English_Name;
-    }
-
-    /**
-     *
-     * @return 电影类型，推荐用string的match方法进行匹配
-     */
-    public String getTypes() {
-        return types;
-    }
-
-    public void setTypes(String types) {
-        this.types = types;
-    }
-
-    /**
-     *
-     * @return 电影拍摄地址
-     */
-    public String getShoot_Place() {
-        return shoot_Place;
-    }
-
-    public void setShoot_Place(String shoot_Place) {
-        this.shoot_Place = shoot_Place;
-    }
-
-    /**
-     *
-     * @return 电影持续时长
-     */
-    public double getLasting_Time() {
-        return lasting_Time;
-    }
-
-    public void setLasting_Time(double lasting_Time) {
-        this.lasting_Time = lasting_Time;
-    }
-
-    /**
-     *
-     * @return 电影上映时间
-     */
-    public Date getShow_Time() {
-        return show_Time;
-    }
-
-    public void setShow_Time(Date show_Time) {
-        this.show_Time = show_Time;
-    }
-
-    /**
-     *
-     * @return 电影上映地址
-     */
-    public String getShow_Place() {
-        return show_Place;
-    }
-
-    public void setShow_Place(String show_Place) {
-        this.show_Place = show_Place;
-    }
-
-    /**
-     * 用户评分
+     * 获取introduction属性的值。
+     * 
      * @return
-     */
-    public double getUser_Score() {
-        return user_Score;
-    }
-
-    public void setUser_Score(double user_Score) {
-        this.user_Score = user_Score;
-    }
-
-    /**
-     * 评价用户数量
-     * @return
-     */
-    public double getUser_NUM() {
-        return user_NUM;
-    }
-
-    public void setUser_NUM(double user_NUM) {
-        this.user_NUM = user_NUM;
-    }
-
-    /**
-     * 电影票房
-     * @return
-     */
-    public double getBooking_Office() {
-        return booking_Office;
-    }
-
-    public void setBooking_Office(double booking_Office) {
-        this.booking_Office = booking_Office;
-    }
-
-    /**
-     * 电影简介
-     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
     public String getIntroduction() {
         return introduction;
     }
 
-    public void setIntroduction(String introduction) {
-        this.introduction = introduction;
+    /**
+     * 设置introduction属性的值。
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setIntroduction(String value) {
+        this.introduction = value;
     }
 
     /**
-     * 观众对该用户的评价信息
-     * @return
+     * 获取lastingTime属性的值。
+     * 
      */
-    public Vector<CatReviewPo> getCatReviewPoVector() {
-        return catReviewPoVector;
+    public double getLastingTime() {
+        return lastingTime;
     }
 
-    public void setCatReviewPoVector(Vector<CatReviewPo> catReviewPoVector) {
+    /**
+     * 设置lastingTime属性的值。
+     * 
+     */
+    public void setLastingTime(double value) {
+        this.lastingTime = value;
+    }
+
+    /**
+     * 获取movieEnglishName属性的值。
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getMovieEnglishName() {
+        return movieEnglishName;
+    }
+
+    /**
+     * 设置movieEnglishName属性的值。
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setMovieEnglishName(String value) {
+        this.movieEnglishName = value;
+    }
+
+    /**
+     * 获取movieName属性的值。
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getMovieName() {
+        return movieName;
+    }
+
+    /**
+     * 设置movieName属性的值。
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setMovieName(String value) {
+        this.movieName = value;
+    }
+
+    /**
+     * 获取moviePic属性的值。
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getMoviePic() {
+        return moviePic;
+    }
+
+    /**
+     * 设置moviePic属性的值。
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setMoviePic(String value) {
+        this.moviePic = value;
+    }
+
+    /**
+     * 获取shootPlace属性的值。
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getShootPlace() {
+        return shootPlace;
+    }
+
+    /**
+     * 设置shootPlace属性的值。
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setShootPlace(String value) {
+        this.shootPlace = value;
+    }
+
+    /**
+     * 获取showPlace属性的值。
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getShowPlace() {
+        return showPlace;
+    }
+
+    /**
+     * 设置showPlace属性的值。
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setShowPlace(String value) {
+        this.showPlace = value;
+    }
+
+    public String getShowTime() {
+        return showTime;
+    }
+
+    public void setShowTime(String showTime) {
+        this.showTime = showTime;
+    }
+
+    /**
+     * 获取types属性的值。
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getTypes() {
+        return types;
+    }
+
+    /**
+     * 设置types属性的值。
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setTypes(String value) {
+        this.types = value;
+    }
+
+    /**
+     * 获取userNUM属性的值。
+     * 
+     */
+    public double getUserNUM() {
+        return userNUM;
+    }
+
+    /**
+     * 设置userNUM属性的值。
+     * 
+     */
+    public void setUserNUM(double value) {
+        this.userNUM = value;
+    }
+
+    /**
+     * 获取userScore属性的值。
+     * 
+     */
+    public double getUserScore() {
+        return userScore;
+    }
+
+    /**
+     * 设置userScore属性的值。
+     * 
+     */
+    public void setUserScore(double value) {
+        this.userScore = value;
+    }
+
+    public void setCatReviewPoVector(List<CatReviewPo> catReviewPoVector) {
         this.catReviewPoVector = catReviewPoVector;
     }
 }
