@@ -51,8 +51,6 @@ public class TaoBaoPo {
      * @param introduction
      */
 
-
-
     public TaoBaoPo(String movie_Pic, String movie_Name, String movie_English_Name, String director, String staring, String types, String shoot_Place, String langage, double lasting_Time, Date show_Time, double user_Score, String introduction) {
         this.movie_Pic = movie_Pic;
         this.movie_Name = movie_Name;
