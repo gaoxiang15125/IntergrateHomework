@@ -38,8 +38,7 @@ $.ajax({
           $("#theaterList").append(html);
        }
        $(".theaterImage").each(function (a) {
-           $(this).attr('src','../images/cont/main_img6.jpg');
-           // $(this).attr('src',data[a].theare_Image);
+           $(this).attr('src',data[a].theare_Image);
        });
        $(".theaterName").each(function (b) {
            $(this).html(data[b].theatre_Name);

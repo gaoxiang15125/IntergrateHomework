@@ -14,7 +14,7 @@ $.ajax({
     success:function (data) {
         for(i in data ){
             if(theatre===data[i].theatre_Name){
-                $("#theaterImage").attr('src', '');
+                $("#theaterImage").attr('src', data[i].theare_Image);
                 $("#theaterName").html(data[i].theatre_Name);
                 $("#theaterAddress").html(data[i].theatre_Address);
                 $("#theaterPhone").html(data[i].theatre_Phone);
