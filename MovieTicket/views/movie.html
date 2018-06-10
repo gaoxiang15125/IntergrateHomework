@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>电影</title>
+<link href="../css/bootstrap.css" rel='stylesheet' type='text/css' />
+ <link href="../css/dashboard.css" rel="stylesheet">
+<link href="../css/style.css" rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/index.css">
+
+<!-- Custom Theme files -->
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  
+</head>
+<body>
+<!-- header -->
+<div class="col-sm-4 col-md-2 sidebar">
+		 <div class="sidebar_top">
+			 <h1 id="movieName">电影名称</h1>
+			 <h3 id="movieEnglishName">电影英文名</h3>
+			 <img id="movieImage" src="../images/avt.png" alt=""/>
+		 </div>
+		<div class="details">
+			<h3>电影类型</h3>
+			<p id="movieType">喜剧</p>
+			<h3>导演</h3>
+			<p id="director">1亿</p>
+			<h3>时长</h3>
+			<p id="movieTime">120分钟</p>
+			<h3>上映地址</h3>
+			<p id="movieAddress">中国大陆</p>
+			<h3>上映日期</h3>
+			<p id="movieDate">2018-01-01</p>
+			<h3>地区</h3>
+			<p id="movieArea">中国大陆</p>
+			<h3>用户评分</h3>
+			<p id="score">8分</p>
+		</div>
+		<div class="clearfix"></div>
+</div>
+<!---->
+<link href="../css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
+	<!---//pop-up-box---->			
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+	 <div class="content">
+
+		 <div class="company">
+			 <h3 class="clr1">电影简介</h3>
+			 <div class="company_details">
+				 <p id="simpleDescribe">这部电影讲述了一个悲惨的故事</p>
+			 </div>
+		 </div>
+
+		 <div class="threates">
+			 <div class="main-cont main-recommend">
+			 <h3 class="clr2">上映影院</h3>
+			 <div class="company_details">
+			 <ul id="theaterList" class="main-cont__list clearfix">
+			 </ul>
+			 </div>
+			 </div>
+		 </div>
+	 </div>
+</div>
+<!---->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/jquery.cookie.js"></script>
+<script src="../js/movie.js"></script>
+</body>
+</html>
