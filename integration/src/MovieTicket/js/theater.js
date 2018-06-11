@@ -32,6 +32,7 @@ $.ajax({
     timeout:'8000',
     data:{theatre:theatre,movieName:moviename},
     success:function (data) {
+        // 处理返回的数据
         var html='\t <tr>\n' +
             '\t\t\t\t\t <td class="moviename"></td>\n' +
             '\t\t\t\t\t <td class="beginTime"></td>\n' +

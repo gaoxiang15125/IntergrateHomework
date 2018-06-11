@@ -3,6 +3,7 @@ $.ajax({
    type:'GET',
     dataType:'json',
    success:function (data) {
+       // 处理返回的数据
       var moviename=GetQueryString("movieName");
       for( d in data){
          if(moviename===data[d].movie_Name){
@@ -28,6 +29,7 @@ $.ajax({
     type:'GET',
     dataType:'json',
     success:function (data) {
+        // 处理返回的数据
        var html='<li class="item">\n' +
            '\t\t\t\t\t <a class="pic"><img class="theaterImage" src="../images/cont/main_img6.jpg" alt="#"></a>\n' +
            '\t\t\t\t\t <div class="info">\n' +

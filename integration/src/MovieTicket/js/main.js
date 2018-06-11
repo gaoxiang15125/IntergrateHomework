@@ -3,6 +3,7 @@ $.ajax({
     type:'GET',
     dataType:'json',
     success:function (data) {
+        // 处理返回的数据
         for(i=0;i<data.length;i++){
             var html='<li class="item">\n' +
                 '                    <div class="pic"><img class="movieImage" src="../images/cont/main_img1.jpg" alt="#"></div>\n' +
