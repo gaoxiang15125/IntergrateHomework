@@ -452,8 +452,22 @@
   position: relative;
   top: 0;
   float: left;
-  width: 224px;
-  margin-right: 20px;
+  width: 180px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  border: 1px solid #dedfe0;
+  background-color: #fff;
+  box-sizing: border-box;
+
+  transition: top 0.2s;
+}
+
+.main-cont__lists .item {
+  position: relative;
+  top: 0;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 30px;
   border: 1px solid #dedfe0;
   background-color: #fff;
   box-sizing: border-box;
